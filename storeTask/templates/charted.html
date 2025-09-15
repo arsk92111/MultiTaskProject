@@ -1,0 +1,94 @@
+{% load static %}
+{% if user.is_authenticated %}
+{% include 'headerTask.html' %}
+{% block content %}
+<head>
+  <title>Chart Page</title>
+  <!-- Include Chart.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="mx-5  bg-light">
+    <center>
+      <h1>Chart & Graphs</h1>
+    </center>
+    
+    <div class="container">
+      <!-- Form to input start and end values -->
+      <form action="{% url 'charted' %}" method="post" enctype="multimedia/part">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="start_val">Start Value:</label>
+          <input type="number" id="start_val" name="start_val" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="end_val">End Value:</label>
+          <input type="number" id="end_val" name="end_val" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <!-- Display a message if any number did not converge to 1, 2, or 4 -->
+      {% if no_convergence %}
+        <div class="alert alert-warning">
+          <strong>Warning:</strong> The following numbers did not generate 1, 2, or 4 in their sequence: 
+          {{ no_convergence|join:", " }}
+        </div>
+      {% endif %}
+
+      <!-- Canvas element for the line chart -->
+      <canvas id="lineChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+
+  {% endblock %}
+  {% include 'footerTask.html' %}
+{% endif %}
+
+<script src="{% static 'storeTask/js/aud_task.js' %}"></script>
+
+<!-- JavaScript to render the chart -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get the sequences from the Django context (as an object)
+    var sequences = {{ sequences|safe }};
+    
+    // Prepare the data for Chart.js
+    var datasets = [];
+
+    // Loop through each sequence and prepare it for the chart
+    Object.keys(sequences).forEach(function(key, index) {
+      var values = sequences[key];
+      var labels = values.map((_, idx) => idx + 1);
+
+      // Create a dataset for each sequence (number)
+      datasets.push({
+        label: key, // Label for the dataset (e.g., num_7, num_8)
+        data: values, // Y-axis values
+        borderColor: 'rgba(' + (Math.random() * 255) + ',' + (Math.random() * 255) + ',' + (Math.random() * 255) + ',1)',
+        backgroundColor: 'rgba(' + (Math.random() * 255) + ',' + (Math.random() * 255) + ',' + (Math.random() * 255) + ',0.2)',
+        fill: false, // No fill under the line
+        tension: 0.1 // Smooth the curve
+      });
+    });
+
+    // Create the line chart
+    var ctx = document.getElementById('lineChart').getContext('2d');
+    var lineChart = new Chart(ctx, {
+      type: 'line', // Define chart type as line
+      data: {
+        labels: [...Array(500).keys()].map(i => i + 1), // X-axis labels (up to 100 steps, adjust if necessary)
+        datasets: datasets // Use the datasets array created above
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true // Ensure Y-axis starts at 0
+          }
+        }
+      }
+    });
+  });
+</script>

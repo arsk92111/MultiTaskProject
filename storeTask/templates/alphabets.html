@@ -1,0 +1,82 @@
+{% load static %}
+{% if user.is_authenticated %}
+{% include 'headerTask.html' %}
+{% block content %}
+<head>
+  <title>Chart Page</title>
+  <!-- Include Chart.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="mx-5  bg-light">
+    <center>
+      <h1>English Alphabets</h1>
+    </center>
+    
+    <div class="container">
+      <!-- Form to input start and end values -->
+      <form action="{% url 'english' %}" method="post" enctype="multimedia/part">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="start_val">Your word:</label>
+          <input type="text" id="word" name="word" class="form-control my-2" required />  
+        </div> 
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+       <div class="bg-light"> 
+        <ul>
+          <h1>{{error}}</h1>
+          <h2>Your Word: {{ posted_word }}</h2>
+          <p>word Sequence Wise at: {{ key_sequence }}</p> 
+        </ul> 
+      </div>
+      <hr class="" style=" padding: 1% 1%; background: black; border: black 0.5rem; width: 100%; height: 5%;"> </hr>
+    
+    </div>
+
+    
+    <div class="container">
+      <h1> For Create the Data Words </h1>
+      <!-- Form to input start and end values -->
+      <form action="{% url 'english' %}" method="post" enctype="multimedia/part">
+        {% csrf_token %}
+        <div class="form-group"> 
+           <label for="file_number">Create file number <small>(e.g., 1 for english_1, 2 for english_2)</small>: </label>
+          <input type="text" name="file_number"  class="form-control  my-2" required  id="file_number" value="{{ file_number }}">
+    
+        </div>
+         
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <hr class="" style=" padding: 1% 1%; background: black; border: black 0.5rem; width: 100%; height: 5%;"></hr>
+    
+    </div>
+
+      
+    <div class="container">
+      <h1> For Display the words </h1>
+      <!-- Form to input start and end values -->
+      <form action="{% url 'english' %}" method="post" enctype="multimedia/part">
+        {% csrf_token %}
+        <div class="form-group"> 
+           <label for="file_show">Select file number <small>(e.g., 1 for english_1, 2 for english_2)</small>: </label>
+          <input type="text" name="file_show"  class="form-control  my-2" required  id="file_show" value="{{ file_show }}"> 
+        </div> 
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <div class="container bg-light">
+        <h1>Dictionary Mapping</h1>
+        <ul> 
+            <h2>Data from File: english_{{ file_show }}.json</h2>
+            <pre>{{ alpha_dict }}</pre>
+        </ul> 
+  </div>
+
+  {% endblock %}
+  {% include 'footerTask.html' %}
+{% endif %}
+
+<script src="{% static 'storeTask/js/aud_task.js' %}"></script>
+ 

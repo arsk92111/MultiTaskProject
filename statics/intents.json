@@ -1,0 +1,60 @@
+{
+    "name": [
+        "my name is ",
+        "I'm ",
+        "I am",
+        "name"
+    ],
+    "AI": [
+        "What is AI?",
+        "What you Thing About Ai?",
+        "Is Ai danger for Human",
+        "Is AI Danger?",
+        "What about Ai?"
+    ],
+    "you": [
+        "What is You?",
+        "AI",
+        "What you Thing About You?",
+        "Is you Danger?",
+        "Who are you?"
+    ],
+    "help": [
+        "assist",
+        "I need assistance",
+        "how can you assist me?"
+    ],
+    "time": [
+        "what is time?",
+        "is it time?",
+        "current time",
+        "time is",
+        "is time",
+        "time now",
+        "now time",
+        "time"
+    ],
+    "date": [
+        "what is date?",
+        "is it date?",
+        "current date",
+        "date is",
+        "is date",
+        "date now",
+        "now date",
+        "date"
+    ],
+    "datetime": [
+        "what is datetime?",
+        "is it datetime?",
+        "current datetime",
+        "datetime is",
+        "is datetime",
+        "datetime now",
+        "now datetime",
+        "datetime"
+    ],
+    "pakistan drama series video": [
+        "pakistan drama series video"
+    ]
+}

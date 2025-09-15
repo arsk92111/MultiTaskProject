@@ -1,0 +1,1024 @@
+{
+    "greeting": [
+        "Hello {name}! How can I assist you today?",
+        "Hi {name}! What would you like to know?",
+        "Greetings {name}! How may I help you?",
+        "Howdy! What's on your mind?",
+        "Hey! Ready to assist you."
+    ],
+    "name": [
+        "Oooh great to meet you {name}. How may I assist you {name}",
+        "Oh, I'll keep that in mind {name}"
+    ],
+    "AI": [
+        " Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.",
+        " AI is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind."
+    ],
+    "you": [
+        "I'm Chatbot Machine.",
+        "I'm only for Assisting you!",
+        "I'm not danger for you ! I'm only wide Programming Algorithm to assis you!"
+    ],
+    "help": [
+        "Sure, {name}, I'm here to help. Please let me know your query.",
+        "What would you like assistance with, {name}?",
+        "I\u00e2\u20ac\u2122m happy to help, {name}! What do you need assistance with?",
+        "I'm ready to assist you with anything you need.",
+        "Just let me know how I can help! {name}"
+    ],
+    "thanks": [
+        "You're welcome {name}! I'm glad I could help.",
+        "Happy to assist, {name}! Feel free to ask anything else.",
+        "It was my pleasure, {name}. Is there anything else you need?",
+        "No problem at all! I'm here for you.",
+        "You're very welcome!"
+    ],
+    "farewell": [
+        "Goodbye {name}! Have a great day!",
+        "See you later {name}! Take care!",
+        "Farewell {name}! Reach out again if you need help.",
+        "Until next time! Have a good one.",
+        "Bye! Don't hesitate to return."
+    ],
+    "feedback": [
+        "I appreciate your feedback! What do you think?",
+        "Your thoughts are valuable! Please share.",
+        "I\u00e2\u20ac\u2122d love to hear your suggestions.",
+        "How can I improve? Your input matters!",
+        "Thank you for your feedback! {name} Any specific thoughts?"
+    ],
+    "query": [
+        "That's an interesting question! Let me think. {name}",
+        "I can help with that. What specifically do you want to know?",
+        "Here\u00e2\u20ac\u2122s what I found on that topic.",
+        "Let me gather some information for you.",
+        "That's a good query! Give me a moment."
+    ],
+    "jokes": [
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "I told my computer I needed a break, and now it won\u00e2\u20ac\u2122t stop sending me to sleep mode!",
+        "Why was the math book sad? Because it had too many problems!",
+        "Did you hear about the claustrophobic astronaut? He just needed a little space.",
+        "Why do seagulls fly over the ocean? Because if they flew over the bay, they\u00e2\u20ac\u2122d be bagels!"
+    ],
+    "smalltalk": [
+        "I'm just here waiting to assist you! {name}",
+        "Just hanging out, ready to chat! {name}",
+        "Doing well, thanks! What about you? {name}",
+        "Every day is a good day when I can help!",
+        "I\u00e2\u20ac\u2122m always up for a chat! {name}"
+    ],
+    "news": [
+        "Here are the latest headlines for you.",
+        "I can summarize some current events. What interests you?",
+        "Stay tuned for the latest updates in the world.",
+        "Would you like local or international news?",
+        "Here's what's happening today in the news.",
+        "Here are the latest headlines for you. The latest gadgets are fascinating! What interests you? Sports trivia can be a fun way to test your knowledge! Stay updated on gaming news to find new interests."
+    ],
+    "motivation": [
+        "Believe in yourself! You are capable of amazing things.",
+        "Every day is a new opportunity to improve.",
+        "Success is not the key to happiness. Happiness is the key to success.",
+        "You are stronger than you think. Keep going!",
+        "Here's a quote: 'The only way to do great work is to love what you do.'"
+    ],
+    "hobbies": [
+        "Some popular hobbies are painting, gardening, and playing music.",
+        "How about trying out photography or hiking?",
+        "Reading and writing can be great ways to unwind.",
+        "What interests you? I can suggest hobbies based on that!",
+        "There are so many fun hobbies! What's your passion?",
+        "Popular hobbies include painting, writing, and hiking.",
+        "Explore creative activities like crafting, photography, or cooking.",
+        "Try different hobbies until you find something you enjoy."
+    ],
+    "health": [
+        "Stay hydrated and eat a balanced diet!",
+        "Regular exercise is key to staying healthy.",
+        "Mental health is just as important; take care of your mind.",
+        "Get enough sleep and find time for relaxation.",
+        "Consider adding more fruits and vegetables to your diet."
+    ],
+    "travel": [
+        "Traveling can be a great adventure! Where do you want to go.!",
+        "Consider visiting Europe; it's filled with rich history.",
+        "Beach destinations are perfect for a relaxing getaway.",
+        "How about a road trip? Exploring local sites can be fun!",
+        "Travel tips: Always have a plan, but be flexible!"
+    ],
+    "food": [
+        "How about trying a new cuisine this week1",
+        "I can suggest some healthy recipes if you like!",
+        "What's your favorite dish? Maybe I can recommend similar ones.",
+        "Cooking can be a fun activity! Want some recipe ideas?",
+        "Let me know if you're in the mood for something specific.",
+        "Sorry",
+        " I didn't quite understand that."
+    ],
+    "music": [
+        "Have you listened to the latest hits? They are amazing!",
+        "What genre do you enjoy? I can recommend some artists.",
+        "Music can be a great mood lifter! What do you like to listen to?",
+        "Let's discover some new music together!",
+        "Do you play any instruments? Music is a fantastic hobby!"
+    ],
+    "books": [
+        "What genre of books do you enjoy? I can suggest some.",
+        "Reading can take you to new worlds! What\u00e2\u20ac\u2122s on your reading list?",
+        "I can recommend classics or contemporary authors!",
+        "How about a mystery or a fantasy novel?",
+        "Books can be great companions! What do you want to read next?"
+    ],
+    "technology": [
+        "The latest gadgets are fascinating! What interests you?",
+        "I can share some trends in tech if you'd like.",
+        "Do you follow any tech news? It's always evolving!",
+        "Let's talk about software! What do you need help with?",
+        "Tech can simplify our lives in so many ways!"
+    ],
+    "fun_facts": [
+        "Did you know honey never spoils? It can last forever!",
+        "Bananas are berries, but strawberries aren\u00e2\u20ac\u2122t!",
+        "Octopuses have three hearts!",
+        "A group of flamingos is called a 'flamboyance.'",
+        "The Eiffel Tower can be 15 cm taller during the summer!"
+    ],
+    "quotes": [
+        "Here's a quote: 'The journey of a thousand miles begins with one step.'",
+        "In the words of Mahatma Gandhi, 'Be the change you wish to see in the world.'",
+        "'The only limit to our realization of tomorrow is our doubts of today.'",
+        "'Life is what happens when you're busy making other plans.'",
+        "Remember: 'In the end, we will remember not the words of our enemies, but the silence of our friends.'"
+    ],
+    "relationship": [
+        "Communication is key! Always express your feelings openly.",
+        "Breakups are tough, but focus on self-care and healing.",
+        "Remember, mutual respect is vital in any relationship.",
+        "Dating should be fun! Don't put too much pressure on yourself.",
+        "Try to understand your partner's perspective for better communication."
+    ],
+    "finance": [
+        "Creating a budget can help you manage your finances effectively.",
+        "Start saving a small percentage of your income each month.",
+        "Investing early can lead to significant long-term benefits.",
+        "Consider talking to a financial advisor for personalized advice.",
+        "Debt can be managed; prioritize paying off high-interest loans first."
+    ],
+    "parenting": [
+        "Establishing routines can help children feel secure.",
+        "Positive reinforcement works wonders with kids.",
+        "Encourage open communication to build trust.",
+        "Make time for family activities to strengthen bonds.",
+        "Be patient; parenting is a journey with ups and downs.",
+        "For toddlers, try using positive reinforcement and engaging activities.",
+        "For teens, maintain open communication and set clear boundaries.",
+        "Activities for kids can include arts and crafts, outdoor play, and educational games."
+    ],
+    "sports": [
+        "Football and basketball are always popular choices!",
+        "Stay updated with your favorite teams' scores online.",
+        "Consider joining a local sports club to meet others.",
+        "Sports trivia can be a fun way to test your knowledge!",
+        "Attend local events to support your favorite teams."
+    ],
+    "movies": [
+        "Have you seen the latest blockbuster? It's getting great reviews!",
+        "Classic films can offer timeless entertainment.",
+        "Consider watching independent films for unique stories.",
+        "Documentaries can be both entertaining and educational.",
+        "What genre are you in the mood for today?"
+    ],
+    "fashion": [
+        "Layering can add depth to any outfit!",
+        "Accessorizing is key to completing a look.",
+        "Don't be afraid to experiment with bold colors!",
+        "Comfort should be a priority along with style.",
+        "Keep an eye on fashion shows for the latest trends."
+    ],
+    "pets": [
+        "Dogs require daily exercise and socialization.",
+        "Cats can be independent, but they love attention too!",
+        "Training your pet can strengthen your bond.",
+        "Regular vet visits are crucial for pet health.",
+        "Adoption can give a loving home to pets in need."
+    ],
+    "travel_advice": [
+        "Always keep your valuables secure while traveling.",
+        "Research your destination to avoid common pitfalls.",
+        "Packing light can make travel much easier.",
+        "Cultural awareness can enhance your travel experience.",
+        "Consider travel insurance for peace of mind."
+    ],
+    "environment": [
+        "Reduce, reuse, and recycle to minimize waste.",
+        "Supporting local products can reduce your carbon footprint.",
+        "Consider using public transport or biking.",
+        "Every small action contributes to a healthier planet.",
+        "Educate others about sustainable practices!"
+    ],
+    "history": [
+        "Did you know the Great Wall of China is over 13,000 miles long?",
+        "The Renaissance was a significant period in art and culture.",
+        "World War II had a profound impact on modern society.",
+        "Learning about history helps us understand our present.",
+        "Every country has its own fascinating historical events!"
+    ],
+    "science": [
+        "The scientific method is essential for conducting experiments.",
+        "Did you know water is unique in that it expands when frozen?",
+        "Stay curious; science is all about asking questions.",
+        "Understanding basic principles can help in everyday life.",
+        "Science can explain many phenomena around us!"
+    ],
+    "art": [
+        "Exploring different art techniques can enhance your skills.",
+        "Famous artists often had unique styles that influenced others.",
+        "Art can express emotions that words sometimes cannot.",
+        "Visiting galleries can inspire your own creativity.",
+        "Consider joining an art class to explore new mediums.",
+        "Different art styles include realism, impressionism, and abstract.",
+        "A good art book can offer insights into techniques and famous artists.",
+        "Practice regularly to improve your drawing skills and explore new styles."
+    ],
+    "games": [
+        "Board games are a great way to bond with family and friends!",
+        "Stay updated on gaming news to find new interests.",
+        "Consider strategies to improve your gameplay.",
+        "Multiplayer games can be a fun way to connect with others.",
+        "Exploring indie games can lead to unique experiences."
+    ],
+    "language": [
+        "Practice daily to improve your language skills.",
+        "Consider language exchange programs to enhance learning.",
+        "Watching films in the target language can be helpful.",
+        "Use apps to practice vocabulary and grammar.",
+        "Join language clubs to practice speaking."
+    ],
+    "self_improvement": [
+        "Set achievable goals to track your progress.",
+        "Mindfulness can help reduce stress and improve focus.",
+        "Consider journaling as a way to reflect on your journey.",
+        "Time management can increase your productivity.",
+        "Celebrate your successes, no matter how small!"
+    ],
+    "technology_trends": [
+        "AI is revolutionizing many industries today.",
+        "Stay informed about mobile technology advancements.",
+        "Cloud computing is changing how businesses operate.",
+        "Keep an eye on tech conferences for future innovations.",
+        "Learning coding can be a valuable skill in today\u00e2\u20ac\u2122s world."
+    ],
+    "exercise": [
+        "Home workouts can include bodyweight exercises like push-ups, squats, and planks.",
+        "A good fitness plan should include a mix of cardio, strength training, and flexibility exercises.",
+        "To stay motivated, set realistic goals and track your progress."
+    ],
+    "gardening": [
+        "Beginner-friendly plants include succulents, spider plants, and pothos.",
+        "Improving garden health involves regular watering, proper sunlight, and soil care.",
+        "For indoor gardening, consider using pots with drainage and grow lights if needed."
+    ],
+    "time_management": [
+        "Try using a planner or digital calendar to keep track of tasks.",
+        "Prioritizing tasks using the Eisenhower Matrix can enhance productivity.",
+        "Break larger tasks into smaller, manageable steps to stay focused."
+    ],
+    "safety": [
+        "Install smoke detectors and carbon monoxide alarms in your home.",
+        "Stay aware of your surroundings and avoid risky situations when traveling.",
+        "Consider taking self-defense classes for personal safety."
+    ],
+    "culture": [
+        "Cultures can vary greatly in traditions, food, language, and art.",
+        "Exploring cultural festivals can offer insights into different customs.",
+        "Cultural diversity enriches communities and promotes mutual respect."
+    ],
+    "events": [
+        "Check local event listings or community boards for activities this weekend.",
+        "Consider visiting parks or museums for local activities.",
+        "Popular festivals often include music, food, and art exhibitions."
+    ],
+    "philosophy": [
+        "Existentialism explores themes of free will, choice, and individual existence.",
+        "Ethics examines what is right or wrong and how we ought to live.",
+        "Famous philosophers include Socrates, Plato, and Kant."
+    ],
+    "career": [
+        "Tailor your resume to highlight relevant experience and skills.",
+        "Practice common interview questions to boost your confidence.",
+        "Consider seeking a mentor for guidance in career planning."
+    ],
+    "nutrition": [
+        "A balanced diet includes fruits, vegetables, proteins, and whole grains.",
+        "Healthy meal options can include salads, grilled chicken, and smoothies.",
+        "Avoid processed foods and excessive sugars for better health."
+    ],
+    "travel_tips": [
+        "Pack light and bring versatile clothing for various occasions.",
+        "Use flight comparison websites to find the best deals.",
+        "Travel apps can help with navigation, booking, and local attractions."
+    ],
+    "local_cuisine": [
+        "Research your country's traditional dishes online for unique recipes.",
+        "Street food often reflects local culture and flavors\u00e2\u20ac\u201dtry popular vendors.",
+        "Don't miss regional specialties when traveling to different areas."
+    ],
+    "sustainability": [
+        "Consider using public transport, cycling, or walking to reduce emissions.",
+        "Practicing recycling and composting can help create a sustainable home.",
+        "Renewable energy sources include solar, wind, and hydroelectric power."
+    ],
+    "mindfulness": [
+        "Mindfulness meditation involves focusing on the present moment.",
+        "Practice being present by engaging fully in daily activities.",
+        "Mindfulness exercises can include deep breathing and guided imagery."
+    ],
+    "social_media": [
+        "Social media can connect people but may also cause stress.",
+        "Improving your social media presence involves consistent and engaging content.",
+        "Consider posting stories, photos, and updates that reflect your interests."
+    ],
+    "public_speaking": [
+        "Practice in front of a mirror or with friends to build confidence.",
+        "To overcome stage fright, focus on your message, not the audience.",
+        "Resources for better communication can include books and workshops."
+    ],
+    "financial_literacy": [
+        "Budgeting helps track expenses and save for future goals.",
+        "Understanding credit scores is crucial for loans and mortgages.",
+        "Different types of insurance include health, auto, and home insurance."
+    ],
+    "booking": [
+        "You can book an appointment via our website or contact support.",
+        "Sure! Please visit our booking page to schedule a time.",
+        "Booking is easy. Just go to our site and choose your preferred time!"
+    ],
+    "product_inquiry": [
+        "We offer a variety of software solutions to make your life easier.",
+        "Our services include web development, cloud solutions, and AI-powered tools.",
+        "We specialize in high-quality tech products and custom software services. How can I assist you further?"
+    ],
+    "location": [
+        "Our headquarters are based in New York City.",
+        "We're located in London, but we serve clients worldwide!",
+        "You can find us online! We operate from San Francisco."
+    ],
+    "compliment": [
+        "Thank you! I'm here to make your experience as pleasant as possible.",
+        "Aww, thanks! You're pretty great too!",
+        "I appreciate it! You're awesome for saying that."
+    ],
+    "sports_teams": [
+        "The last match was won by [Team Name].",
+        "The best football team depends on who you ask, but many consider [Team Name] to be on top.",
+        "Your favorite team has had a great season! Here\u00e2\u20ac\u2122s some info: [Team Stats].",
+        "I don't have a favorite team, but I can tell you about some top teams!"
+    ],
+    "math_help": [
+        "Sure, I can help with math. What's your question?",
+        "Let me solve that equation for you. Can you give me the details?",
+        "The square root of 64 is 8.",
+        "The area of a circle is calculated using the formula \u00cf\u20acr\u00c2\u00b2, where r is the radius."
+    ],
+    "dreams": [
+        "Dreams often reflect our subconscious thoughts, but their meaning can vary.",
+        "We dream as a way for our brain to process memories and emotions, though the exact reason isn't fully understood.",
+        "Lucid dreaming is when you become aware that you're dreaming and can sometimes control the dream.",
+        "To control your dreams, you can try techniques like keeping a dream journal or practicing mindfulness."
+    ],
+    "meditation": [
+        "Meditation has many benefits, including reducing stress and improving focus.",
+        "You can start meditating by sitting quietly and focusing on your breath for a few minutes each day.",
+        "Mindfulness meditation involves paying attention to the present moment without judgment.",
+        "Yes, meditation can help reduce stress by promoting relaxation and clarity."
+    ],
+    "pets_advice": [
+        "To train your dog, start with basic commands like sit, stay, and come, and reward good behavior with treats.",
+        "The best food for cats is usually high-quality dry or wet food with real meat as the main ingredient.",
+        "You should walk your dog at least once or twice a day, depending on its breed and energy level.",
+        "To take care of a pet, make sure they have a balanced diet, regular exercise, and lots of love!"
+    ],
+    "podcasts": [
+        "I recommend checking out these podcasts: [Podcast Recommendations].",
+        "Some of the top podcasts right now are [Top Podcast Names].",
+        "Podcasts like [Learning Podcast Name] are great for learning new things.",
+        "Yes, I do listen to podcasts! They\u00e2\u20ac\u2122re a great way to stay informed and entertained."
+    ],
+    "mental_health": [
+        "To improve your mental health, practice self-care, exercise regularly, and talk to someone if you\u00e2\u20ac\u2122re feeling down.",
+        "Signs of anxiety can include excessive worrying, restlessness, and difficulty concentrating.",
+        "To deal with stress, try relaxation techniques like deep breathing or meditation.",
+        "For mental wellness, focus on a balanced lifestyle, healthy habits, and staying connected with others."
+    ],
+    "entrepreneurship": [
+        "To start a business, you need a clear idea, a business plan, and funding to get started.",
+        "Good business ideas can come from solving problems, such as [Business Idea Examples].",
+        "To become an entrepreneur, you need passion, resilience, and a willingness to take risks.",
+        "Successful entrepreneurs often have traits like perseverance, creativity, and adaptability."
+    ],
+    "cryptocurrency": [
+        "Cryptocurrency is a digital or virtual currency that uses cryptography for security.",
+        "Bitcoin is the first decentralized cryptocurrency and operates without a central authority.",
+        "To start investing in crypto, you need to choose a crypto exchange and create a wallet.",
+        "The future of cryptocurrency looks promising, but it\u00e2\u20ac\u2122s a volatile market with high risks and rewards."
+    ],
+    "climate_change": [
+        "Climate change refers to long-term shifts in temperatures and weather patterns, primarily caused by human activities.",
+        "You can help the environment by reducing waste, using energy-efficient appliances, and supporting clean energy.",
+        "Global warming is a result of increasing greenhouse gases in the atmosphere, leading to rising temperatures.",
+        "To reduce your carbon footprint, consider using public transport, recycling, and eating a plant-based diet."
+    ],
+    "space_exploration": [
+        "NASA is currently working on the Artemis mission, aiming to return humans to the Moon.",
+        "The Mars mission focuses on exploring the possibility of life and preparing for future human colonization.",
+        "Space tourism is a growing industry where private companies are offering commercial spaceflights.",
+        "The first person to walk on the moon was Neil Armstrong in 1969."
+    ],
+    "movies_reviews": [
+        "The top movies right now include [Current Top Movies].",
+        "I can review that movie for you! What specific details would you like to know?",
+        "If you\u00e2\u20ac\u2122re wondering what to watch next, I recommend checking out [Movie Recommendation].",
+        "The best movies of all time are often considered to be [Classic Movie Names]."
+    ],
+    "fashion_trends": [
+        "Currently trending in fashion are [Current Fashion Trends].",
+        "For summer, light and breezy outfits like dresses and shorts are great choices.",
+        "You can style a blazer with a pair of jeans or a pencil skirt for a polished look.",
+        "Upcoming fashion trends include [Future Fashion Trends]."
+    ],
+    "body_language": [
+        "Body language refers to non-verbal cues that communicate emotions and intentions.",
+        "To improve your body language, focus on maintaining eye contact, open posture, and confident gestures.",
+        "You can read someone\u00e2\u20ac\u2122s body language by paying attention to their facial expressions and gestures.",
+        "Signs of confidence include standing tall, making eye contact, and speaking clearly."
+    ],
+    "diet_and_nutrition": [
+        "For a healthy diet, focus on whole foods like fruits, vegetables, lean proteins, and whole grains.",
+        "The keto diet is a low-carb, high-fat diet that can help with weight loss.",
+        "To lose weight safely, aim for a balanced diet, regular exercise, and avoid crash diets.",
+        "For meal prep ideas, try preparing large batches of protein, grains, and veggies for easy meals throughout the week."
+    ],
+    "home_decor": [
+        "To decorate your living room, you can add cozy textiles, wall art, and good lighting.",
+        "Some home decor tips include using mirrors to make a room feel larger and adding plants for a natural touch.",
+        "To choose the right colors for your house, consider neutral tones for a calm effect and bold colors for accents.",
+        "Trending in home design are minimalist decor, open floor plans, and sustainable materials."
+    ],
+    "skincare": [
+        "Some of the best skincare products include cleansers, moisturizers, and sunscreen with SPF 30 or higher.",
+        "To take care of your skin, follow a routine of cleansing, exfoliating, and moisturizing daily.",
+        "A good skincare routine includes cleansing, toning, moisturizing, and applying sunscreen in the morning.",
+        "Using sunscreen regularly helps protect your skin from harmful UV rays and prevents premature aging."
+    ],
+    "minimalism": [
+        "Minimalism is a lifestyle that focuses on simplifying your life and owning fewer possessions.",
+        "To start living a minimalist lifestyle, declutter your space and focus on keeping only what\u00e2\u20ac\u2122s necessary.",
+        "The benefits of minimalism include less stress, more financial freedom, and a greater focus on experiences over things.",
+        "To declutter, start small and tackle one area of your home at a time, letting go of things you no longer need."
+    ],
+    "work_life_balance": [
+        "To balance work and life, set boundaries, manage your time effectively, and prioritize self-care.",
+        "Signs of burnout include feeling exhausted, losing motivation, and becoming increasingly cynical about your work.",
+        "To create a better work-life balance, schedule time for breaks, hobbies, and spending time with loved ones.",
+        "Staying productive without overworking requires planning your day, taking regular breaks, and avoiding multitasking."
+    ],
+    "coding": [
+        "To learn to code, start with basic programming languages like Python or JavaScript.",
+        "Python is often considered one of the best programming languages for beginners.",
+        "Some good resources for learning Python include Codecademy, freeCodeCamp, and Python.org.",
+        "Web development involves designing and creating websites, using languages like HTML, CSS, and JavaScript.",
+        "Sorry",
+        " I don't understand.",
+        "Sorry",
+        " I don't understand.",
+        "Sorry",
+        " I didn't quite understand that.",
+        "Sorry",
+        " I didn't quite understand that."
+    ],
+    "photography": [
+        "For photography tips, focus on lighting, composition, and learning how to use your camera\u00e2\u20ac\u2122s settings.",
+        "To take better pictures with your phone, use natural light and avoid using the flash whenever possible.",
+        "Aperture refers to the size of the opening in your camera lens that controls the amount of light entering.",
+        "To improve composition, follow the rule of thirds and experiment with different angles and perspectives."
+    ],
+    "virtual_reality": [
+        "Virtual reality is a simulated experience that can be similar to or completely different from the real world.",
+        "Some of the best VR headsets are Oculus Rift, PlayStation VR, and HTC Vive.",
+        "Augmented reality blends digital elements with the real world, unlike VR which creates an entirely virtual environment.",
+        "VR is widely used in gaming, providing an immersive experience for players."
+    ],
+    "car_maintenance": [
+        "You should service your car every 6 months or every 5,000 to 7,500 miles, depending on the vehicle.",
+        "Signs of car trouble include strange noises, warning lights, and changes in the way your car handles.",
+        "To change a tire, you\u00e2\u20ac\u2122ll need a jack, lug wrench, and a spare tire. Make sure the car is on a flat surface and follow safety precautions.",
+        "Some good car maintenance tips include checking your oil regularly, keeping tires inflated, and replacing air filters as needed."
+    ],
+    "weather": [
+        "The current weather in {place} is sunny with a chance of rain later today.",
+        "It looks like it's going to be cloudy in {place} today.",
+        "The temperature in {place} is {temperature} degrees Celsius with light winds.",
+        "It's a beautiful day in {place}, perfect for outdoor activities."
+    ],
+    "restaurant_recommendation": [
+        "I recommend trying {restaurant_name} in {place}. They have amazing {dish}.",
+        "If you're in {place}, check out {restaurant_name}. It's a local favorite.",
+        "{restaurant_name} in {place} serves some of the best {cuisine} around.",
+        "Looking for a place to eat in {place}? I suggest {restaurant_name}, especially for {dish} lovers."
+    ],
+    "travel_recommendation": [
+        "If you're traveling to {place}, be sure to visit {landmark} for an amazing experience.",
+        "{place} is known for its beautiful {landscape}, and I recommend exploring {attraction}.",
+        "While in {place}, don't miss out on visiting {tourist_spot}. It's a must-see.",
+        "For a great time in {place}, consider taking a trip to {destination}. The views are stunning."
+    ],
+    "birthday_wish": [
+        "Happy Birthday, {name}! Wishing you a fantastic year ahead.",
+        "Happy Birthday, {name}! May your special day be filled with joy and happiness.",
+        "Wishing you all the best on your birthday, {name}! Have an amazing day.",
+        "Happy Birthday, {name}! Hope you enjoy your day to the fullest!"
+    ],
+    "reminder": [
+        "Don't forget your meeting with {name} at {time}.",
+        "You have an appointment at {place} on {date}.",
+        "Reminder: You have a deadline for {task} on {date}.",
+        "Remember to pick up {item} from {place} today."
+    ],
+    "greeting_with_name": [
+        "Hello, {name}! How can I assist you today?",
+        "Hi {name}, it's great to see you. What would you like to know?",
+        "Greetings, {name}! How can I help you?",
+        "Hey {name}, what can I do for you today?"
+    ],
+    "farewell_with_name": [
+        "Goodbye, {name}! Take care and have a great day.",
+        "See you later, {name}! Stay safe.",
+        "Farewell, {name}! Hope to hear from you soon.",
+        "Bye {name}, feel free to reach out if you need anything."
+    ],
+    "appointment_scheduling": [
+        "Your appointment with {name} is scheduled for {date} at {time}.",
+        "I've scheduled your meeting at {place} for {date} at {time}.",
+        "You have an appointment with {name} at {place} on {date}.",
+        "The meeting with {name} is confirmed for {time} on {date} at {place}."
+    ],
+    "product_recommendation": [
+        "If you're looking for a new phone, I recommend the {product_name}. It's known for its {feature}.",
+        "The {product_name} is a great choice if you want {feature}. You can find it in {place}.",
+        "I suggest checking out the {product_name}, especially if you're looking for {feature}.",
+        "For {product_category}, the {product_name} is a top pick. You can purchase it at {place}."
+    ],
+    "fitness_tips": [
+        "To stay fit, try exercising for at least 30 minutes a day, whether it's running, cycling, or weight training.",
+        "For better fitness, focus on a balanced routine that includes strength training and cardio.",
+        "To improve your stamina, gradually increase your workout duration and intensity.",
+        "Consistency is key to staying fit. Try setting a workout schedule that you can stick to."
+    ],
+    "event_reminder": [
+        "Don't forget about the {event_name} at {place} on {date}.",
+        "You have {event_name} coming up at {place} on {date} and {time}.",
+        "Reminder: The {event_name} is happening at {place} on {date}.",
+        "Mark your calendar for the {event_name} at {place} on {date}."
+    ],
+    "joke": [
+        "Why don't skeletons fight each other? They don't have the guts!",
+        "What do you call fake spaghetti? An impasta!",
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "I told my computer I needed a break, and now it won\u00e2\u20ac\u2122t stop sending me cookies!"
+    ],
+    "affirmation": [
+        "You are capable of amazing things, {name}. Believe in yourself!",
+        "Keep going, {name}. You're doing great and you're stronger than you think.",
+        "Remember, {name}, you have the power to create the life you want.",
+        "Every day is a fresh start, {name}. Make the most of it!"
+    ],
+    "recommend_movie": [
+        "If you\u00e2\u20ac\u2122re into action, I recommend watching {movie_name}. It\u00e2\u20ac\u2122s full of excitement!",
+        "You should check out {movie_name}, especially if you like {genre} movies.",
+        "For a great {genre} movie, I suggest {movie_name}. It's a must-watch!",
+        "Looking for something to watch? {movie_name} is a fantastic choice, especially for {genre} fans."
+    ],
+    "learning_resources": [
+        "If you're looking to learn {topic}, I recommend {resource_name} as a great place to start.",
+        "You can learn more about {topic} from {resource_name}. They have excellent tutorials.",
+        "For mastering {topic}, check out {resource_name}. It's highly recommended.",
+        "{resource_name} offers some of the best resources on {topic}, perfect for beginners."
+    ],
+    "tech_support": [
+        "To resolve your issue with {device}, try restarting it and checking for updates.",
+        "If your {device} isn't working, I suggest checking the connection or reinstalling the software.",
+        "For troubleshooting {software}, ensure it\u00e2\u20ac\u2122s updated to the latest version and try reinstalling it.",
+        "If you're having trouble with {device}, it could be a hardware issue. Consider contacting support."
+    ],
+    "advice": [
+        "It depends on the situation. Can you share more details?",
+        "I'm here to help! What specific advice are you looking for?",
+        "Consider the pros and cons before making a decision.",
+        "Sometimes, talking it out with someone can provide clarity."
+    ],
+    "creativity": [
+        "How about starting a journal to jot down your ideas?",
+        "You could try a new art form or join a creative workshop.",
+        "Brainstorming with friends can lead to great ideas!",
+        "Exploring different environments can spark creativity."
+    ],
+    "self_care": [
+        "Make sure to take time for yourself each day.",
+        "Consider activities like reading, meditating, or going for a walk.",
+        "Self-care routines can include anything that helps you relax.",
+        "Don't forget to hydrate and nourish your body!",
+        "What are some effective self-care practices?",
+        "How can I create a self-care routine?",
+        "What are the benefits of self-care?",
+        "Can you suggest self-care activities for stress relief?"
+    ],
+    "goal_setting": [
+        "Start by writing down your goals and breaking them into smaller steps.",
+        "Setting deadlines can help keep you accountable.",
+        "Make sure your goals are specific and measurable.",
+        "Review your progress regularly to stay on track."
+    ],
+    "productivity": [
+        "Try the Pomodoro Technique for focused work sessions.",
+        "Eliminating distractions can significantly boost your productivity.",
+        "Consider using tools like to-do lists or project management apps.",
+        "Setting clear priorities can help you manage your time effectively."
+    ],
+    "emotional_intelligence": [
+        "Emotional intelligence involves recognizing and managing your emotions.",
+        "Practice empathy by trying to understand others' perspectives.",
+        "Journaling can help you reflect on your emotional responses.",
+        "Active listening is a key component of emotional intelligence.",
+        "What is emotional intelligence?",
+        "How can I improve my emotional intelligence?",
+        "Why is emotional intelligence important?",
+        "What are some signs of high emotional intelligence?"
+    ],
+    "gratitude": [
+        "Consider keeping a gratitude journal to list things you're thankful for.",
+        "Expressing gratitude can improve your overall mood.",
+        "Try writing thank-you notes to those who have helped you.",
+        "Practicing gratitude daily can lead to a more positive outlook."
+    ],
+    "networking": [
+        "Always follow up after meeting someone new to build connections.",
+        "Consider attending industry events or workshops to expand your network.",
+        "Be genuine in your interactions; people appreciate authenticity.",
+        "Listening is just as important as talking when networking."
+    ],
+    "conflict_resolution": [
+        "Approach conflicts with an open mind and a willingness to listen.",
+        "Consider finding common ground to facilitate discussion.",
+        "Use 'I' statements to express your feelings without placing blame.",
+        "Taking a break can sometimes help diffuse tension."
+    ],
+    "mindset": [
+        "Cultivating a growth mindset can open up new opportunities.",
+        "Embrace challenges as a chance to learn and grow.",
+        "Surrounding yourself with positive influences can help shift your mindset.",
+        "Reflect on past successes to remind yourself of your capabilities.",
+        "What is a growth mindset?",
+        "How can I develop a positive mindset?",
+        "What are the benefits of a strong mindset?",
+        "Can you give me examples of positive affirmations?"
+    ],
+    "dream_interpretation": [
+        "Dreaming about falling often symbolizes feelings of losing control or fear of failure.",
+        "Understanding your dreams can reveal insights about your subconscious thoughts and emotions.",
+        "Being chased in a dream can represent avoidance or fear of something in your waking life.",
+        "Recurring dreams may indicate unresolved issues or anxieties that need to be addressed."
+    ],
+    "art_appreciation": [
+        "You can learn to appreciate art by visiting galleries, studying art history, and exploring different styles.",
+        "Famous art movements include Impressionism, Cubism, Surrealism, and Abstract Expressionism.",
+        "Modern art encompasses a wide range of styles and is characterized by a departure from traditional forms.",
+        "The elements of art include line, shape, color, texture, space, and form."
+    ],
+    "sci-fi": [
+        "Some of the best science fiction books include 'Dune' by Frank Herbert, '1984' by George Orwell, and 'Neuromancer' by William Gibson.",
+        "A popular sci-fi movie to recommend is 'Blade Runner' or 'Inception'.",
+        "Famous sci-fi authors include Isaac Asimov, Arthur C. Clarke, and Philip K. Dick.",
+        "Common themes in sci-fi literature include technology, space exploration, time travel, and the nature of humanity."
+    ],
+    "mythology": [
+        "Greek mythology includes a rich tapestry of gods, goddesses, and heroes, such as Zeus, Athena, and Hercules.",
+        "Famous myths include the story of Hercules' Twelve Labors and the Trojan War.",
+        "Main gods in Norse mythology include Odin, Thor, and Freya.",
+        "Myths often convey moral lessons or explain natural phenomena."
+    ],
+    "urban_exploration": [
+        "Tips for urban exploration include researching locations, going with a friend, and respecting private property.",
+        "Some abandoned places to explore are old factories, schools, and amusement parks.",
+        "Safety precautions include wearing sturdy shoes, having a flashlight, and being aware of your surroundings.",
+        "Bring a camera, a first-aid kit, and a backpack with water and snacks for urban exploration."
+    ],
+    "personal_finance": [
+        "Start saving money by creating a budget, cutting unnecessary expenses, and setting savings goals.",
+        "Popular budgeting methods include the envelope system, zero-based budgeting, and the 50/30/20 rule.",
+        "Build an emergency fund by saving three to six months' worth of living expenses in a separate account.",
+        "Basics of investing include understanding stocks, bonds, mutual funds, and diversification."
+    ],
+    "collecting": [
+        "Popular things to collect include coins, stamps, antiques, and action figures.",
+        "To start a coin collection, research different types of coins and begin with a few that interest you.",
+        "When collecting stamps, focus on specific themes or countries to make your collection unique.",
+        "Tips for valuing your collection include researching market prices and getting items appraised."
+    ],
+    "nature": [
+        "Spending time in nature benefits mental health, reduces stress, and enhances creativity.",
+        "You can connect with nature by hiking, gardening, or practicing mindfulness outdoors.",
+        "Some beautiful natural parks to visit include Yellowstone, Yosemite, and the Great Smoky Mountains.",
+        "Nature is vital for mental health as it promotes relaxation and reduces anxiety."
+    ],
+    "sustainable_fashion": [
+        "Sustainable fashion focuses on eco-friendly materials, ethical labor practices, and minimizing waste.",
+        "To make your wardrobe more sustainable, choose quality over quantity and consider thrift shopping.",
+        "Eco-friendly clothing brands include Patagonia, Everlane, and Reformation.",
+        "Fast fashion is harmful because it contributes to pollution, waste, and unethical labor practices."
+    ],
+    "home_improvement": [
+        "Easy home improvement projects include painting a room, landscaping, or updating fixtures.",
+        "You can increase your home's value by renovating kitchens and bathrooms or enhancing curb appeal.",
+        "Essential tools for home repairs include a hammer, screwdrivers, a level, and a tape measure.",
+        "Eco-friendly home upgrades might include energy-efficient appliances, LED lighting, and solar panels."
+    ],
+    "virtual_meetings": [
+        "Improve your virtual meeting skills by practicing clear communication and using engaging visuals.",
+        "To engage an online audience, encourage participation and use interactive tools like polls.",
+        "Prepare for a virtual presentation by rehearsing your content and checking your tech setup.",
+        "Common virtual meeting etiquette includes being punctual, muting when not speaking, and dressing appropriately."
+    ],
+    "community_service": [
+        "Ideas for community service projects include organizing a food drive, tutoring, or park clean-ups.",
+        "To get involved in volunteering, reach out to local non-profits or community centers.",
+        "Benefits of community service include building connections, gaining skills, and making a positive impact.",
+        "Ways to support local charities include donating time, money, or resources and spreading awareness."
+    ],
+    "storytelling": [
+        "Elements of a good story include a compelling plot, well-developed characters, and a strong setting.",
+        "Improve your storytelling skills by reading widely, practicing writing, and seeking feedback.",
+        "Tips for writing fiction include outlining your plot, developing relatable characters, and showing rather than telling.",
+        "Famous storytelling techniques include the hero's journey, cliffhangers, and foreshadowing."
+    ],
+    "public_policy": [
+        "Public policy refers to the principles and laws that govern a community or society.",
+        "Get involved in local politics by attending town hall meetings and engaging with community leaders.",
+        "Current public policy issues might include healthcare reform, climate change, and education policy.",
+        "You can advocate for change by raising awareness, contacting representatives, and participating in campaigns."
+    ],
+    "historical_figures": [
+        "Influential historical figures include Mahatma Gandhi, Martin Luther King Jr., and Marie Curie.",
+        "A famous inventor is Thomas Edison, known for the electric light bulb and phonograph.",
+        "Specific leaders have impacted history through revolutions, reforms, and global policies.",
+        "Lessons from historical events often highlight the importance of perseverance, leadership, and social justice."
+    ],
+    "philanthropy": [
+        "Philanthropy is the act of giving to promote the welfare of others, often through charitable donations.",
+        "To become a philanthropist, you can start by identifying causes you're passionate about and donating time or money.",
+        "Successful philanthropic efforts include the Bill and Melinda Gates Foundation and the Red Cross.",
+        "Giving back is important as it fosters community, supports those in need, and can create positive change."
+    ],
+    "digital_nomad": [
+        "A digital nomad is someone who works remotely while traveling or living in various locations.",
+        "To become a digital nomad, seek remote work opportunities and plan your travels accordingly.",
+        "Best countries for digital nomads often include Thailand, Portugal, and Mexico due to cost and connectivity.",
+        "Challenges digital nomads face include managing time zones, maintaining productivity, and finding stable internet."
+    ],
+    "entrepreneurial_mindset": [
+        "Having an entrepreneurial mindset means being open to innovation, willing to take risks, and resilient.",
+        "Cultivate an entrepreneurial mindset by embracing challenges, seeking knowledge, and networking.",
+        "Characteristics of successful entrepreneurs include adaptability, creativity, and strong problem-solving skills.",
+        "Resources for aspiring entrepreneurs include online courses, mentorship programs, and business books."
+    ],
+    "google": [
+        "Google is a search engine that allows users to find information online.",
+        "https://www.google.com",
+        "Google offers various services, including Gmail, Google Maps, and Google Drive.",
+        "Founded in 1998, Google is one of the largest technology companies in the world.",
+        "Google is a search engine that allows users to find information online. https://www.google.com Google offers various services"
+    ],
+    "bing": [
+        "Bing is a web search engine owned by Microsoft.",
+        "https://www.bing.com",
+        "It provides search results for web pages, images, and videos.",
+        "Bing offers features like rewards for using the search engine."
+    ],
+    "yahoo": [
+        "Yahoo is an internet services provider known for its search engine and web portal.",
+        "It offers news, email, finance, and more.",
+        "https://www.yahoo.com",
+        "Yahoo was one of the early pioneers of the internet.",
+        "Yahoo is an internet services provider known for its search engine and web portal. It offers news",
+        " email",
+        " finance",
+        " and more. https://www.yahoo.com Yahoo was one of the early pioneers of the internet."
+    ],
+    "gmail": [
+        "Gmail is a free email service developed by Google.",
+        "https://www.gmail.com",
+        "It provides a user-friendly interface and robust spam filtering.",
+        "Gmail allows users to send and receive emails, as well as organize them with labels."
+    ],
+    "outlook": [
+        "Outlook is a personal information manager from Microsoft.",
+        "https://www.outlook.com",
+        "It includes an email client, calendar, task manager, and contact manager.",
+        "Outlook integrates with Microsoft Office applications."
+    ],
+    "facebook": [
+        "Facebook is a social media platform that allows users to connect and share content.",
+        "https://www.facebook.com",
+        "It was founded by Mark Zuckerberg in 2004 and has billions of active users.",
+        "Facebook provides features like profiles, groups, and news feeds."
+    ],
+    "twitter": [
+        "Twitter is a microblogging platform where users post and interact through tweets.",
+        "https://www.x.com",
+        "https://www.twitter.com",
+        "It was launched in 2006 and is known for its character limit for posts.",
+        "Twitter is used for news, social commentary, and personal updates."
+    ],
+    "linkedin": [
+        "LinkedIn is a professional networking site used to connect job seekers and employers.",
+        "https://www.linkedin.com",
+        "It allows users to create profiles, share resumes, and network with professionals.",
+        "LinkedIn was founded in 2003 and has millions of users worldwide."
+    ],
+    "instagram": [
+        "Instagram is a photo and video sharing social networking service.",
+        "https://www.instagram.com",
+        "It was launched in 2010 and is known for its visual content and stories.",
+        "Instagram allows users to follow others and engage through likes and comments."
+    ],
+    "reddit": [
+        "Reddit is a social news aggregation and discussion website.",
+        "https://www.reddit.com",
+        "Users submit content to the site and engage in discussions through comments.",
+        "Reddit is organized into communities called subreddits, each focusing on specific topics."
+    ],
+    "youtube": [
+        "YouTube is a video sharing platform where users can upload, view, and share videos.",
+        "https://www.youtube.com",
+        "Founded in 2005, it has become a primary source for video content online.",
+        "YouTube allows creators to monetize their videos through ads and subscriptions.",
+        "YouTube allows creators to monetize their videos through ads and subscriptions."
+    ],
+    "quora": [
+        "Quora is a question-and-answer platform where users can ask questions and share knowledge.",
+        "https://www.quore.com",
+        "It allows individuals to contribute answers based on their expertise.",
+        "Quora has a diverse user base and covers a wide range of topics."
+    ],
+    "pinterest": [
+        "Pinterest is a visual discovery and bookmarking tool used for finding and saving ideas.",
+        "https://www.pinterest.com",
+        "Users can create boards to organize their interests and pin images from the web.",
+        "Pinterest is popular for DIY projects, recipes, and fashion inspiration."
+    ],
+    "tumblr": [
+        "Tumblr is a microblogging platform that allows users to share multimedia content.",
+        "It was launched in 2007 and is known for its community-driven content.",
+        "https://www.tumblr.com",
+        "Tumblr supports a variety of formats, including text, photos, quotes, and videos."
+    ],
+    "flickr": [
+        "Flickr is an image and video hosting service, primarily used for sharing photographs.",
+        "Founded in 2004, it allows users to upload and organize their media collections.",
+        "https://www.flickr.com",
+        "Flickr offers features like albums, tags, and social networking among photographers."
+    ],
+    "riddle": [
+        "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+        "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+        " How can a girl go 25 days without sleep?.....She sleeps and night!",
+        "How do you make the number one disappear?.....Add the letter G and it\u00e2\u20ac\u2122s 'gone'!",
+        " What will you actually find at the end of every rainbow?.....The letter 'w'",
+        "What can be caught but never thrown?.....A cold!",
+        "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+        " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+        "Why can't a bike stand on it's own?.....It is two-tired."
+    ],
+    "date": [
+        "Today's date is {date}.",
+        "The current date is {date}."
+    ],
+    "time": [
+        "The current time is {time}.",
+        "It's {time} right now."
+    ],
+    "datetime": [
+        "The current date and time is {datetime}.",
+        "Right now, it is {datetime}."
+    ],
+    "wikipedia": [
+        "Your topic :  Wikipedia is a free content online encyclopedia written and maintained by a community of volunteers",
+        " known as Wikipedians",
+        " through open collaboration and the wiki software MediaWiki. Wikipedia is the largest and most-read reference work in history",
+        " and is consistently ranked among the ten most visited websites; as of August\u00a02024",
+        " it was ranked fourth by Semrush",
+        " and seventh by Similarweb. Founded by Jimmy Wales and Larry Sanger on January 15",
+        " 2001",
+        " Wikipedia has been hosted since 2003 by the Wikimedia Foundation",
+        " an American nonprofit organization funded mainly by donations from readers."
+    ],
+    "i'm so happy.": [
+        "I sense you're feeling joy. You're in high spirits! Keep up the positivity. You seem to have a strong opinion on this matter. Oh",
+        " I'll keep that in mind there"
+    ],
+    "My name is Arshad Ali": [
+        "Your topic :  See you later",
+        " Arshad Ali! Stay safe. To declutter",
+        " start small and tackle one area of your home at a time",
+        " letting go of things you no longer need. Greetings",
+        " Arshad Ali! How can I help you? Oooh great to meet you Arshad Ali. How may I assist you Arshad Ali Some of the best VR headsets are Oculus Rift",
+        " PlayStation VR",
+        " and HTC Vive. Existentialism explores themes of free will",
+        " choice",
+        " and individual existence. Don't forget about the {event_name} at {place} on {date}."
+    ],
+    "tell me about  south asia": [
+        "What are some signs of high emotional intelligence? Let me gather some information for you. Improve your storytelling skills by reading widely",
+        " practicing writing",
+        " and seeking feedback. I'm Chatbot Machine. Why don't scientists trust atoms? Because they make up everything! Doing well",
+        " thanks! What about you? Arshad Ali Here are the latest headlines for you. The latest gadgets are fascinating! What interests you? Sports trivia can be a fun way to test your knowledge! Stay updated on gaming news to find new interests. Bananas are berries",
+        " but strawberries aren\u00e2\u20ac\u2122t! Cultures can vary greatly in traditions",
+        " food",
+        " language",
+        " and art. Famous philosophers include Socrates",
+        " Plato",
+        " and Kant. Street food often reflects local culture and flavors\u00e2\u20ac\u201dtry popular vendors. We specialize in high-quality tech products and custom software services. How can I assist you further? The last match was won by [Team Name]. Meditation has many benefits",
+        " including reducing stress and improving focus. To train your dog",
+        " start with basic commands like sit",
+        " stay",
+        " and come",
+        " and reward good behavior with treats. Global warming is a result of increasing greenhouse gases in the atmosphere",
+        " leading to rising temperatures. The first person to walk on the moon was Neil Armstrong in 1969. To improve your body language",
+        " focus on maintaining eye contact",
+        " open posture",
+        " and confident gestures. The keto diet is a low-carb",
+        " high-fat diet that can help with weight loss. A good skincare routine includes cleansing",
+        " toning",
+        " moisturizing",
+        " and applying sunscreen in the morning.  I don't understand. To change a tire",
+        " you\u00e2\u20ac\u2122ll need a jack",
+        " lug wrench",
+        " and a spare tire. Make sure the car is on a flat surface and follow safety precautions. How can I create a self-care routine? What do you call fake spaghetti? An impasta! Famous art movements include Impressionism",
+        " Cubism",
+        " Surrealism",
+        " and Abstract Expressionism. Famous myths include the story of Hercules' Twelve Labors and the Trojan War. A famous inventor is Thomas Edison",
+        " known for the electric light bulb and phonograph. Google offers various services",
+        " including Gmail",
+        " Google Maps",
+        " and Google Drive. It provides search results for web pages",
+        " images",
+        " and videos.  finance It was founded by Mark Zuckerberg in 2004 and has billions of active users. It was launched in 2006 and is known for its character limit for posts. https://www.instagram.com Tumblr supports a variety of formats",
+        " including text",
+        " photos",
+        " quotes",
+        " and videos."
+    ],
+    "math quadratic formula": [
+        "Sure",
+        " I can help with math. What's your question?"
+    ],
+    "quadratic formula": [
+        " I can help with math. What's your question?"
+    ],
+    "tell me math formulas": [
+        "What are some signs of high emotional intelligence? That's a good query! Give me a moment. Famous storytelling techniques include the hero's journey",
+        " cliffhangers",
+        " and foreshadowing.  I can help with math. What's your question? I'm Chatbot Machine. I told my computer I needed a break",
+        " and now it won\u00e2\u20ac\u2122t stop sending me to sleep mode! Doing well",
+        " thanks! What about you? Arshad Ali Here are the latest headlines for you. The latest gadgets are fascinating! What interests you? Sports trivia can be a fun way to test your knowledge! Stay updated on gaming news to find new interests. Bananas are berries",
+        " but strawberries aren\u00e2\u20ac\u2122t! Cultures can vary greatly in traditions",
+        " food",
+        " language",
+        " and art. Famous philosophers include Socrates",
+        " Plato",
+        " and Kant. Don't miss regional specialties when traveling to different areas. We offer a variety of software solutions to make your life easier. I don't have a favorite team",
+        " but I can tell you about some top teams! The square root of 64 is 8. Yes",
+        " meditation can help reduce stress by promoting relaxation and clarity. You should walk your dog at least once or twice a day",
+        " depending on its breed and energy level. To reduce your carbon footprint",
+        " consider using public transport",
+        " recycling",
+        " and eating a plant-based diet. The first person to walk on the moon was Neil Armstrong in 1969. Body language refers to non-verbal cues that communicate emotions and intentions. For meal prep ideas",
+        " try preparing large batches of protein",
+        " grains",
+        " and veggies for easy meals throughout the week. Using sunscreen regularly helps protect your skin from harmful UV rays and prevents premature aging. Sorry Some good car maintenance tips include checking your oil regularly",
+        " keeping tires inflated",
+        " and replacing air filters as needed. What are the benefits of self-care? Why don't skeletons fight each other? They don't have the guts! You can learn to appreciate art by visiting galleries",
+        " studying art history",
+        " and exploring different styles. Main gods in Norse mythology include Odin",
+        " Thor",
+        " and Freya. Specific leaders have impacted history through revolutions",
+        " reforms",
+        " and global policies. Google is a search engine that allows users to find information online. https://www.google.com Google offers various services Bing is a web search engine owned by Microsoft. Yahoo is an internet services provider known for its search engine and web portal. Facebook provides features like profiles",
+        " groups",
+        " and news feeds. https://www.x.com It was launched in 2010 and is known for its visual content and stories. Tumblr supports a variety of formats",
+        " including text",
+        " photos",
+        " quotes",
+        " and videos.  Cubism  I can help with math. What's your question?"
+    ]
+}
