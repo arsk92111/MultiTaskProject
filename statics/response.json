@@ -1,4 +1,11 @@
 {
+    "greeting": [
+        "Hello {name}! How can I assist you today?",
+        "Hi {name}! What would you like to know?",
+        "Greetings {name}! How may I help you?",
+        "Howdy! What's on your mind?",
+        "Hey! Ready to assist you."
+    ],
     "name": [
         "Oooh great to meet you {name}. How may I assist you {name}",
         "Oh, I'll keep that in mind {name}"
@@ -19,6 +26,911 @@
         "I'm ready to assist you with anything you need.",
         "Just let me know how I can help! {name}"
     ],
+    "thanks": [
+        "You're welcome {name}! I'm glad I could help.",
+        "Happy to assist, {name}! Feel free to ask anything else.",
+        "It was my pleasure, {name}. Is there anything else you need?",
+        "No problem at all! I'm here for you.",
+        "You're very welcome!"
+    ],
+    "farewell": [
+        "Goodbye {name}! Have a great day!",
+        "See you later {name}! Take care!",
+        "Farewell {name}! Reach out again if you need help.",
+        "Until next time! Have a good one.",
+        "Bye! Don't hesitate to return."
+    ],
+    "feedback": [
+        "I appreciate your feedback! What do you think?",
+        "Your thoughts are valuable! Please share.",
+        "I\u00e2\u20ac\u2122d love to hear your suggestions.",
+        "How can I improve? Your input matters!",
+        "Thank you for your feedback! {name} Any specific thoughts?"
+    ],
+    "query": [
+        "That's an interesting question! Let me think. {name}",
+        "I can help with that. What specifically do you want to know?",
+        "Here\u00e2\u20ac\u2122s what I found on that topic.",
+        "Let me gather some information for you.",
+        "That's a good query! Give me a moment."
+    ],
+    "jokes": [
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "I told my computer I needed a break, and now it won\u00e2\u20ac\u2122t stop sending me to sleep mode!",
+        "Why was the math book sad? Because it had too many problems!",
+        "Did you hear about the claustrophobic astronaut? He just needed a little space.",
+        "Why do seagulls fly over the ocean? Because if they flew over the bay, they\u00e2\u20ac\u2122d be bagels!"
+    ],
+    "smalltalk": [
+        "I'm just here waiting to assist you! {name}",
+        "Just hanging out, ready to chat! {name}",
+        "Doing well, thanks! What about you? {name}",
+        "Every day is a good day when I can help!",
+        "I\u00e2\u20ac\u2122m always up for a chat! {name}"
+    ],
+    "news": [
+        "Here are the latest headlines for you.",
+        "I can summarize some current events. What interests you?",
+        "Stay tuned for the latest updates in the world.",
+        "Would you like local or international news?",
+        "Here's what's happening today in the news.",
+        "Here are the latest headlines for you. The latest gadgets are fascinating! What interests you? Sports trivia can be a fun way to test your knowledge! Stay updated on gaming news to find new interests."
+    ],
+    "motivation": [
+        "Believe in yourself! You are capable of amazing things.",
+        "Every day is a new opportunity to improve.",
+        "Success is not the key to happiness. Happiness is the key to success.",
+        "You are stronger than you think. Keep going!",
+        "Here's a quote: 'The only way to do great work is to love what you do.'"
+    ],
+    "hobbies": [
+        "Some popular hobbies are painting, gardening, and playing music.",
+        "How about trying out photography or hiking?",
+        "Reading and writing can be great ways to unwind.",
+        "What interests you? I can suggest hobbies based on that!",
+        "There are so many fun hobbies! What's your passion?",
+        "Popular hobbies include painting, writing, and hiking.",
+        "Explore creative activities like crafting, photography, or cooking.",
+        "Try different hobbies until you find something you enjoy."
+    ],
+    "health": [
+        "Stay hydrated and eat a balanced diet!",
+        "Regular exercise is key to staying healthy.",
+        "Mental health is just as important; take care of your mind.",
+        "Get enough sleep and find time for relaxation.",
+        "Consider adding more fruits and vegetables to your diet."
+    ],
+    "travel": [
+        "Traveling can be a great adventure! Where do you want to go.!",
+        "Consider visiting Europe; it's filled with rich history.",
+        "Beach destinations are perfect for a relaxing getaway.",
+        "How about a road trip? Exploring local sites can be fun!",
+        "Travel tips: Always have a plan, but be flexible!"
+    ],
+    "food": [
+        "How about trying a new cuisine this week1",
+        "I can suggest some healthy recipes if you like!",
+        "What's your favorite dish? Maybe I can recommend similar ones.",
+        "Cooking can be a fun activity! Want some recipe ideas?",
+        "Let me know if you're in the mood for something specific.",
+        "Sorry",
+        " I didn't quite understand that."
+    ],
+    "music": [
+        "Have you listened to the latest hits? They are amazing!",
+        "What genre do you enjoy? I can recommend some artists.",
+        "Music can be a great mood lifter! What do you like to listen to?",
+        "Let's discover some new music together!",
+        "Do you play any instruments? Music is a fantastic hobby!"
+    ],
+    "books": [
+        "What genre of books do you enjoy? I can suggest some.",
+        "Reading can take you to new worlds! What\u00e2\u20ac\u2122s on your reading list?",
+        "I can recommend classics or contemporary authors!",
+        "How about a mystery or a fantasy novel?",
+        "Books can be great companions! What do you want to read next?"
+    ],
+    "technology": [
+        "The latest gadgets are fascinating! What interests you?",
+        "I can share some trends in tech if you'd like.",
+        "Do you follow any tech news? It's always evolving!",
+        "Let's talk about software! What do you need help with?",
+        "Tech can simplify our lives in so many ways!"
+    ],
+    "fun_facts": [
+        "Did you know honey never spoils? It can last forever!",
+        "Bananas are berries, but strawberries aren\u00e2\u20ac\u2122t!",
+        "Octopuses have three hearts!",
+        "A group of flamingos is called a 'flamboyance.'",
+        "The Eiffel Tower can be 15 cm taller during the summer!"
+    ],
+    "quotes": [
+        "Here's a quote: 'The journey of a thousand miles begins with one step.'",
+        "In the words of Mahatma Gandhi, 'Be the change you wish to see in the world.'",
+        "'The only limit to our realization of tomorrow is our doubts of today.'",
+        "'Life is what happens when you're busy making other plans.'",
+        "Remember: 'In the end, we will remember not the words of our enemies, but the silence of our friends.'"
+    ],
+    "relationship": [
+        "Communication is key! Always express your feelings openly.",
+        "Breakups are tough, but focus on self-care and healing.",
+        "Remember, mutual respect is vital in any relationship.",
+        "Dating should be fun! Don't put too much pressure on yourself.",
+        "Try to understand your partner's perspective for better communication."
+    ],
+    "finance": [
+        "Creating a budget can help you manage your finances effectively.",
+        "Start saving a small percentage of your income each month.",
+        "Investing early can lead to significant long-term benefits.",
+        "Consider talking to a financial advisor for personalized advice.",
+        "Debt can be managed; prioritize paying off high-interest loans first."
+    ],
+    "parenting": [
+        "Establishing routines can help children feel secure.",
+        "Positive reinforcement works wonders with kids.",
+        "Encourage open communication to build trust.",
+        "Make time for family activities to strengthen bonds.",
+        "Be patient; parenting is a journey with ups and downs.",
+        "For toddlers, try using positive reinforcement and engaging activities.",
+        "For teens, maintain open communication and set clear boundaries.",
+        "Activities for kids can include arts and crafts, outdoor play, and educational games."
+    ],
+    "sports": [
+        "Football and basketball are always popular choices!",
+        "Stay updated with your favorite teams' scores online.",
+        "Consider joining a local sports club to meet others.",
+        "Sports trivia can be a fun way to test your knowledge!",
+        "Attend local events to support your favorite teams."
+    ],
+    "movies": [
+        "Have you seen the latest blockbuster? It's getting great reviews!",
+        "Classic films can offer timeless entertainment.",
+        "Consider watching independent films for unique stories.",
+        "Documentaries can be both entertaining and educational.",
+        "What genre are you in the mood for today?"
+    ],
+    "fashion": [
+        "Layering can add depth to any outfit!",
+        "Accessorizing is key to completing a look.",
+        "Don't be afraid to experiment with bold colors!",
+        "Comfort should be a priority along with style.",
+        "Keep an eye on fashion shows for the latest trends."
+    ],
+    "pets": [
+        "Dogs require daily exercise and socialization.",
+        "Cats can be independent, but they love attention too!",
+        "Training your pet can strengthen your bond.",
+        "Regular vet visits are crucial for pet health.",
+        "Adoption can give a loving home to pets in need."
+    ],
+    "travel_advice": [
+        "Always keep your valuables secure while traveling.",
+        "Research your destination to avoid common pitfalls.",
+        "Packing light can make travel much easier.",
+        "Cultural awareness can enhance your travel experience.",
+        "Consider travel insurance for peace of mind."
+    ],
+    "environment": [
+        "Reduce, reuse, and recycle to minimize waste.",
+        "Supporting local products can reduce your carbon footprint.",
+        "Consider using public transport or biking.",
+        "Every small action contributes to a healthier planet.",
+        "Educate others about sustainable practices!"
+    ],
+    "history": [
+        "Did you know the Great Wall of China is over 13,000 miles long?",
+        "The Renaissance was a significant period in art and culture.",
+        "World War II had a profound impact on modern society.",
+        "Learning about history helps us understand our present.",
+        "Every country has its own fascinating historical events!"
+    ],
+    "science": [
+        "The scientific method is essential for conducting experiments.",
+        "Did you know water is unique in that it expands when frozen?",
+        "Stay curious; science is all about asking questions.",
+        "Understanding basic principles can help in everyday life.",
+        "Science can explain many phenomena around us!"
+    ],
+    "art": [
+        "Exploring different art techniques can enhance your skills.",
+        "Famous artists often had unique styles that influenced others.",
+        "Art can express emotions that words sometimes cannot.",
+        "Visiting galleries can inspire your own creativity.",
+        "Consider joining an art class to explore new mediums.",
+        "Different art styles include realism, impressionism, and abstract.",
+        "A good art book can offer insights into techniques and famous artists.",
+        "Practice regularly to improve your drawing skills and explore new styles."
+    ],
+    "games": [
+        "Board games are a great way to bond with family and friends!",
+        "Stay updated on gaming news to find new interests.",
+        "Consider strategies to improve your gameplay.",
+        "Multiplayer games can be a fun way to connect with others.",
+        "Exploring indie games can lead to unique experiences."
+    ],
+    "language": [
+        "Practice daily to improve your language skills.",
+        "Consider language exchange programs to enhance learning.",
+        "Watching films in the target language can be helpful.",
+        "Use apps to practice vocabulary and grammar.",
+        "Join language clubs to practice speaking."
+    ],
+    "self_improvement": [
+        "Set achievable goals to track your progress.",
+        "Mindfulness can help reduce stress and improve focus.",
+        "Consider journaling as a way to reflect on your journey.",
+        "Time management can increase your productivity.",
+        "Celebrate your successes, no matter how small!"
+    ],
+    "technology_trends": [
+        "AI is revolutionizing many industries today.",
+        "Stay informed about mobile technology advancements.",
+        "Cloud computing is changing how businesses operate.",
+        "Keep an eye on tech conferences for future innovations.",
+        "Learning coding can be a valuable skill in today\u00e2\u20ac\u2122s world."
+    ],
+    "exercise": [
+        "Home workouts can include bodyweight exercises like push-ups, squats, and planks.",
+        "A good fitness plan should include a mix of cardio, strength training, and flexibility exercises.",
+        "To stay motivated, set realistic goals and track your progress."
+    ],
+    "gardening": [
+        "Beginner-friendly plants include succulents, spider plants, and pothos.",
+        "Improving garden health involves regular watering, proper sunlight, and soil care.",
+        "For indoor gardening, consider using pots with drainage and grow lights if needed."
+    ],
+    "time_management": [
+        "Try using a planner or digital calendar to keep track of tasks.",
+        "Prioritizing tasks using the Eisenhower Matrix can enhance productivity.",
+        "Break larger tasks into smaller, manageable steps to stay focused."
+    ],
+    "safety": [
+        "Install smoke detectors and carbon monoxide alarms in your home.",
+        "Stay aware of your surroundings and avoid risky situations when traveling.",
+        "Consider taking self-defense classes for personal safety."
+    ],
+    "culture": [
+        "Cultures can vary greatly in traditions, food, language, and art.",
+        "Exploring cultural festivals can offer insights into different customs.",
+        "Cultural diversity enriches communities and promotes mutual respect."
+    ],
+    "events": [
+        "Check local event listings or community boards for activities this weekend.",
+        "Consider visiting parks or museums for local activities.",
+        "Popular festivals often include music, food, and art exhibitions."
+    ],
+    "philosophy": [
+        "Existentialism explores themes of free will, choice, and individual existence.",
+        "Ethics examines what is right or wrong and how we ought to live.",
+        "Famous philosophers include Socrates, Plato, and Kant."
+    ],
+    "career": [
+        "Tailor your resume to highlight relevant experience and skills.",
+        "Practice common interview questions to boost your confidence.",
+        "Consider seeking a mentor for guidance in career planning."
+    ],
+    "nutrition": [
+        "A balanced diet includes fruits, vegetables, proteins, and whole grains.",
+        "Healthy meal options can include salads, grilled chicken, and smoothies.",
+        "Avoid processed foods and excessive sugars for better health."
+    ],
+    "travel_tips": [
+        "Pack light and bring versatile clothing for various occasions.",
+        "Use flight comparison websites to find the best deals.",
+        "Travel apps can help with navigation, booking, and local attractions."
+    ],
+    "local_cuisine": [
+        "Research your country's traditional dishes online for unique recipes.",
+        "Street food often reflects local culture and flavors\u00e2\u20ac\u201dtry popular vendors.",
+        "Don't miss regional specialties when traveling to different areas."
+    ],
+    "sustainability": [
+        "Consider using public transport, cycling, or walking to reduce emissions.",
+        "Practicing recycling and composting can help create a sustainable home.",
+        "Renewable energy sources include solar, wind, and hydroelectric power."
+    ],
+    "mindfulness": [
+        "Mindfulness meditation involves focusing on the present moment.",
+        "Practice being present by engaging fully in daily activities.",
+        "Mindfulness exercises can include deep breathing and guided imagery."
+    ],
+    "social_media": [
+        "Social media can connect people but may also cause stress.",
+        "Improving your social media presence involves consistent and engaging content.",
+        "Consider posting stories, photos, and updates that reflect your interests."
+    ],
+    "public_speaking": [
+        "Practice in front of a mirror or with friends to build confidence.",
+        "To overcome stage fright, focus on your message, not the audience.",
+        "Resources for better communication can include books and workshops."
+    ],
+    "financial_literacy": [
+        "Budgeting helps track expenses and save for future goals.",
+        "Understanding credit scores is crucial for loans and mortgages.",
+        "Different types of insurance include health, auto, and home insurance."
+    ],
+    "booking": [
+        "You can book an appointment via our website or contact support.",
+        "Sure! Please visit our booking page to schedule a time.",
+        "Booking is easy. Just go to our site and choose your preferred time!"
+    ],
+    "product_inquiry": [
+        "We offer a variety of software solutions to make your life easier.",
+        "Our services include web development, cloud solutions, and AI-powered tools.",
+        "We specialize in high-quality tech products and custom software services. How can I assist you further?"
+    ],
+    "location": [
+        "Our headquarters are based in New York City.",
+        "We're located in London, but we serve clients worldwide!",
+        "You can find us online! We operate from San Francisco."
+    ],
+    "compliment": [
+        "Thank you! I'm here to make your experience as pleasant as possible.",
+        "Aww, thanks! You're pretty great too!",
+        "I appreciate it! You're awesome for saying that."
+    ],
+    "sports_teams": [
+        "The last match was won by [Team Name].",
+        "The best football team depends on who you ask, but many consider [Team Name] to be on top.",
+        "Your favorite team has had a great season! Here\u00e2\u20ac\u2122s some info: [Team Stats].",
+        "I don't have a favorite team, but I can tell you about some top teams!"
+    ],
+    "math_help": [
+        "Sure, I can help with math. What's your question?",
+        "Let me solve that equation for you. Can you give me the details?",
+        "The square root of 64 is 8.",
+        "The area of a circle is calculated using the formula \u00cf\u20acr\u00c2\u00b2, where r is the radius."
+    ],
+    "dreams": [
+        "Dreams often reflect our subconscious thoughts, but their meaning can vary.",
+        "We dream as a way for our brain to process memories and emotions, though the exact reason isn't fully understood.",
+        "Lucid dreaming is when you become aware that you're dreaming and can sometimes control the dream.",
+        "To control your dreams, you can try techniques like keeping a dream journal or practicing mindfulness."
+    ],
+    "meditation": [
+        "Meditation has many benefits, including reducing stress and improving focus.",
+        "You can start meditating by sitting quietly and focusing on your breath for a few minutes each day.",
+        "Mindfulness meditation involves paying attention to the present moment without judgment.",
+        "Yes, meditation can help reduce stress by promoting relaxation and clarity."
+    ],
+    "pets_advice": [
+        "To train your dog, start with basic commands like sit, stay, and come, and reward good behavior with treats.",
+        "The best food for cats is usually high-quality dry or wet food with real meat as the main ingredient.",
+        "You should walk your dog at least once or twice a day, depending on its breed and energy level.",
+        "To take care of a pet, make sure they have a balanced diet, regular exercise, and lots of love!"
+    ],
+    "podcasts": [
+        "I recommend checking out these podcasts: [Podcast Recommendations].",
+        "Some of the top podcasts right now are [Top Podcast Names].",
+        "Podcasts like [Learning Podcast Name] are great for learning new things.",
+        "Yes, I do listen to podcasts! They\u00e2\u20ac\u2122re a great way to stay informed and entertained."
+    ],
+    "mental_health": [
+        "To improve your mental health, practice self-care, exercise regularly, and talk to someone if you\u00e2\u20ac\u2122re feeling down.",
+        "Signs of anxiety can include excessive worrying, restlessness, and difficulty concentrating.",
+        "To deal with stress, try relaxation techniques like deep breathing or meditation.",
+        "For mental wellness, focus on a balanced lifestyle, healthy habits, and staying connected with others."
+    ],
+    "entrepreneurship": [
+        "To start a business, you need a clear idea, a business plan, and funding to get started.",
+        "Good business ideas can come from solving problems, such as [Business Idea Examples].",
+        "To become an entrepreneur, you need passion, resilience, and a willingness to take risks.",
+        "Successful entrepreneurs often have traits like perseverance, creativity, and adaptability."
+    ],
+    "cryptocurrency": [
+        "Cryptocurrency is a digital or virtual currency that uses cryptography for security.",
+        "Bitcoin is the first decentralized cryptocurrency and operates without a central authority.",
+        "To start investing in crypto, you need to choose a crypto exchange and create a wallet.",
+        "The future of cryptocurrency looks promising, but it\u00e2\u20ac\u2122s a volatile market with high risks and rewards."
+    ],
+    "climate_change": [
+        "Climate change refers to long-term shifts in temperatures and weather patterns, primarily caused by human activities.",
+        "You can help the environment by reducing waste, using energy-efficient appliances, and supporting clean energy.",
+        "Global warming is a result of increasing greenhouse gases in the atmosphere, leading to rising temperatures.",
+        "To reduce your carbon footprint, consider using public transport, recycling, and eating a plant-based diet."
+    ],
+    "space_exploration": [
+        "NASA is currently working on the Artemis mission, aiming to return humans to the Moon.",
+        "The Mars mission focuses on exploring the possibility of life and preparing for future human colonization.",
+        "Space tourism is a growing industry where private companies are offering commercial spaceflights.",
+        "The first person to walk on the moon was Neil Armstrong in 1969."
+    ],
+    "movies_reviews": [
+        "The top movies right now include [Current Top Movies].",
+        "I can review that movie for you! What specific details would you like to know?",
+        "If you\u00e2\u20ac\u2122re wondering what to watch next, I recommend checking out [Movie Recommendation].",
+        "The best movies of all time are often considered to be [Classic Movie Names]."
+    ],
+    "fashion_trends": [
+        "Currently trending in fashion are [Current Fashion Trends].",
+        "For summer, light and breezy outfits like dresses and shorts are great choices.",
+        "You can style a blazer with a pair of jeans or a pencil skirt for a polished look.",
+        "Upcoming fashion trends include [Future Fashion Trends]."
+    ],
+    "body_language": [
+        "Body language refers to non-verbal cues that communicate emotions and intentions.",
+        "To improve your body language, focus on maintaining eye contact, open posture, and confident gestures.",
+        "You can read someone\u00e2\u20ac\u2122s body language by paying attention to their facial expressions and gestures.",
+        "Signs of confidence include standing tall, making eye contact, and speaking clearly."
+    ],
+    "diet_and_nutrition": [
+        "For a healthy diet, focus on whole foods like fruits, vegetables, lean proteins, and whole grains.",
+        "The keto diet is a low-carb, high-fat diet that can help with weight loss.",
+        "To lose weight safely, aim for a balanced diet, regular exercise, and avoid crash diets.",
+        "For meal prep ideas, try preparing large batches of protein, grains, and veggies for easy meals throughout the week."
+    ],
+    "home_decor": [
+        "To decorate your living room, you can add cozy textiles, wall art, and good lighting.",
+        "Some home decor tips include using mirrors to make a room feel larger and adding plants for a natural touch.",
+        "To choose the right colors for your house, consider neutral tones for a calm effect and bold colors for accents.",
+        "Trending in home design are minimalist decor, open floor plans, and sustainable materials."
+    ],
+    "skincare": [
+        "Some of the best skincare products include cleansers, moisturizers, and sunscreen with SPF 30 or higher.",
+        "To take care of your skin, follow a routine of cleansing, exfoliating, and moisturizing daily.",
+        "A good skincare routine includes cleansing, toning, moisturizing, and applying sunscreen in the morning.",
+        "Using sunscreen regularly helps protect your skin from harmful UV rays and prevents premature aging."
+    ],
+    "minimalism": [
+        "Minimalism is a lifestyle that focuses on simplifying your life and owning fewer possessions.",
+        "To start living a minimalist lifestyle, declutter your space and focus on keeping only what\u00e2\u20ac\u2122s necessary.",
+        "The benefits of minimalism include less stress, more financial freedom, and a greater focus on experiences over things.",
+        "To declutter, start small and tackle one area of your home at a time, letting go of things you no longer need."
+    ],
+    "work_life_balance": [
+        "To balance work and life, set boundaries, manage your time effectively, and prioritize self-care.",
+        "Signs of burnout include feeling exhausted, losing motivation, and becoming increasingly cynical about your work.",
+        "To create a better work-life balance, schedule time for breaks, hobbies, and spending time with loved ones.",
+        "Staying productive without overworking requires planning your day, taking regular breaks, and avoiding multitasking."
+    ],
+    "coding": [
+        "To learn to code, start with basic programming languages like Python or JavaScript.",
+        "Python is often considered one of the best programming languages for beginners.",
+        "Some good resources for learning Python include Codecademy, freeCodeCamp, and Python.org.",
+        "Web development involves designing and creating websites, using languages like HTML, CSS, and JavaScript.",
+        "Sorry",
+        " I don't understand.",
+        "Sorry",
+        " I don't understand.",
+        "Sorry",
+        " I didn't quite understand that.",
+        "Sorry",
+        " I didn't quite understand that."
+    ],
+    "photography": [
+        "For photography tips, focus on lighting, composition, and learning how to use your camera\u00e2\u20ac\u2122s settings.",
+        "To take better pictures with your phone, use natural light and avoid using the flash whenever possible.",
+        "Aperture refers to the size of the opening in your camera lens that controls the amount of light entering.",
+        "To improve composition, follow the rule of thirds and experiment with different angles and perspectives."
+    ],
+    "virtual_reality": [
+        "Virtual reality is a simulated experience that can be similar to or completely different from the real world.",
+        "Some of the best VR headsets are Oculus Rift, PlayStation VR, and HTC Vive.",
+        "Augmented reality blends digital elements with the real world, unlike VR which creates an entirely virtual environment.",
+        "VR is widely used in gaming, providing an immersive experience for players."
+    ],
+    "car_maintenance": [
+        "You should service your car every 6 months or every 5,000 to 7,500 miles, depending on the vehicle.",
+        "Signs of car trouble include strange noises, warning lights, and changes in the way your car handles.",
+        "To change a tire, you\u00e2\u20ac\u2122ll need a jack, lug wrench, and a spare tire. Make sure the car is on a flat surface and follow safety precautions.",
+        "Some good car maintenance tips include checking your oil regularly, keeping tires inflated, and replacing air filters as needed."
+    ],
+    "weather": [
+        "The current weather in {place} is sunny with a chance of rain later today.",
+        "It looks like it's going to be cloudy in {place} today.",
+        "The temperature in {place} is {temperature} degrees Celsius with light winds.",
+        "It's a beautiful day in {place}, perfect for outdoor activities."
+    ],
+    "restaurant_recommendation": [
+        "I recommend trying {restaurant_name} in {place}. They have amazing {dish}.",
+        "If you're in {place}, check out {restaurant_name}. It's a local favorite.",
+        "{restaurant_name} in {place} serves some of the best {cuisine} around.",
+        "Looking for a place to eat in {place}? I suggest {restaurant_name}, especially for {dish} lovers."
+    ],
+    "travel_recommendation": [
+        "If you're traveling to {place}, be sure to visit {landmark} for an amazing experience.",
+        "{place} is known for its beautiful {landscape}, and I recommend exploring {attraction}.",
+        "While in {place}, don't miss out on visiting {tourist_spot}. It's a must-see.",
+        "For a great time in {place}, consider taking a trip to {destination}. The views are stunning."
+    ],
+    "birthday_wish": [
+        "Happy Birthday, {name}! Wishing you a fantastic year ahead.",
+        "Happy Birthday, {name}! May your special day be filled with joy and happiness.",
+        "Wishing you all the best on your birthday, {name}! Have an amazing day.",
+        "Happy Birthday, {name}! Hope you enjoy your day to the fullest!"
+    ],
+    "reminder": [
+        "Don't forget your meeting with {name} at {time}.",
+        "You have an appointment at {place} on {date}.",
+        "Reminder: You have a deadline for {task} on {date}.",
+        "Remember to pick up {item} from {place} today."
+    ],
+    "greeting_with_name": [
+        "Hello, {name}! How can I assist you today?",
+        "Hi {name}, it's great to see you. What would you like to know?",
+        "Greetings, {name}! How can I help you?",
+        "Hey {name}, what can I do for you today?"
+    ],
+    "farewell_with_name": [
+        "Goodbye, {name}! Take care and have a great day.",
+        "See you later, {name}! Stay safe.",
+        "Farewell, {name}! Hope to hear from you soon.",
+        "Bye {name}, feel free to reach out if you need anything."
+    ],
+    "appointment_scheduling": [
+        "Your appointment with {name} is scheduled for {date} at {time}.",
+        "I've scheduled your meeting at {place} for {date} at {time}.",
+        "You have an appointment with {name} at {place} on {date}.",
+        "The meeting with {name} is confirmed for {time} on {date} at {place}."
+    ],
+    "product_recommendation": [
+        "If you're looking for a new phone, I recommend the {product_name}. It's known for its {feature}.",
+        "The {product_name} is a great choice if you want {feature}. You can find it in {place}.",
+        "I suggest checking out the {product_name}, especially if you're looking for {feature}.",
+        "For {product_category}, the {product_name} is a top pick. You can purchase it at {place}."
+    ],
+    "fitness_tips": [
+        "To stay fit, try exercising for at least 30 minutes a day, whether it's running, cycling, or weight training.",
+        "For better fitness, focus on a balanced routine that includes strength training and cardio.",
+        "To improve your stamina, gradually increase your workout duration and intensity.",
+        "Consistency is key to staying fit. Try setting a workout schedule that you can stick to."
+    ],
+    "event_reminder": [
+        "Don't forget about the {event_name} at {place} on {date}.",
+        "You have {event_name} coming up at {place} on {date} and {time}.",
+        "Reminder: The {event_name} is happening at {place} on {date}.",
+        "Mark your calendar for the {event_name} at {place} on {date}."
+    ],
+    "joke": [
+        "Why don't skeletons fight each other? They don't have the guts!",
+        "What do you call fake spaghetti? An impasta!",
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "I told my computer I needed a break, and now it won\u00e2\u20ac\u2122t stop sending me cookies!"
+    ],
+    "affirmation": [
+        "You are capable of amazing things, {name}. Believe in yourself!",
+        "Keep going, {name}. You're doing great and you're stronger than you think.",
+        "Remember, {name}, you have the power to create the life you want.",
+        "Every day is a fresh start, {name}. Make the most of it!"
+    ],
+    "recommend_movie": [
+        "If you\u00e2\u20ac\u2122re into action, I recommend watching {movie_name}. It\u00e2\u20ac\u2122s full of excitement!",
+        "You should check out {movie_name}, especially if you like {genre} movies.",
+        "For a great {genre} movie, I suggest {movie_name}. It's a must-watch!",
+        "Looking for something to watch? {movie_name} is a fantastic choice, especially for {genre} fans."
+    ],
+    "learning_resources": [
+        "If you're looking to learn {topic}, I recommend {resource_name} as a great place to start.",
+        "You can learn more about {topic} from {resource_name}. They have excellent tutorials.",
+        "For mastering {topic}, check out {resource_name}. It's highly recommended.",
+        "{resource_name} offers some of the best resources on {topic}, perfect for beginners."
+    ],
+    "tech_support": [
+        "To resolve your issue with {device}, try restarting it and checking for updates.",
+        "If your {device} isn't working, I suggest checking the connection or reinstalling the software.",
+        "For troubleshooting {software}, ensure it\u00e2\u20ac\u2122s updated to the latest version and try reinstalling it.",
+        "If you're having trouble with {device}, it could be a hardware issue. Consider contacting support."
+    ],
+    "advice": [
+        "It depends on the situation. Can you share more details?",
+        "I'm here to help! What specific advice are you looking for?",
+        "Consider the pros and cons before making a decision.",
+        "Sometimes, talking it out with someone can provide clarity."
+    ],
+    "creativity": [
+        "How about starting a journal to jot down your ideas?",
+        "You could try a new art form or join a creative workshop.",
+        "Brainstorming with friends can lead to great ideas!",
+        "Exploring different environments can spark creativity."
+    ],
+    "self_care": [
+        "Make sure to take time for yourself each day.",
+        "Consider activities like reading, meditating, or going for a walk.",
+        "Self-care routines can include anything that helps you relax.",
+        "Don't forget to hydrate and nourish your body!",
+        "What are some effective self-care practices?",
+        "How can I create a self-care routine?",
+        "What are the benefits of self-care?",
+        "Can you suggest self-care activities for stress relief?"
+    ],
+    "goal_setting": [
+        "Start by writing down your goals and breaking them into smaller steps.",
+        "Setting deadlines can help keep you accountable.",
+        "Make sure your goals are specific and measurable.",
+        "Review your progress regularly to stay on track."
+    ],
+    "productivity": [
+        "Try the Pomodoro Technique for focused work sessions.",
+        "Eliminating distractions can significantly boost your productivity.",
+        "Consider using tools like to-do lists or project management apps.",
+        "Setting clear priorities can help you manage your time effectively."
+    ],
+    "emotional_intelligence": [
+        "Emotional intelligence involves recognizing and managing your emotions.",
+        "Practice empathy by trying to understand others' perspectives.",
+        "Journaling can help you reflect on your emotional responses.",
+        "Active listening is a key component of emotional intelligence.",
+        "What is emotional intelligence?",
+        "How can I improve my emotional intelligence?",
+        "Why is emotional intelligence important?",
+        "What are some signs of high emotional intelligence?"
+    ],
+    "gratitude": [
+        "Consider keeping a gratitude journal to list things you're thankful for.",
+        "Expressing gratitude can improve your overall mood.",
+        "Try writing thank-you notes to those who have helped you.",
+        "Practicing gratitude daily can lead to a more positive outlook."
+    ],
+    "networking": [
+        "Always follow up after meeting someone new to build connections.",
+        "Consider attending industry events or workshops to expand your network.",
+        "Be genuine in your interactions; people appreciate authenticity.",
+        "Listening is just as important as talking when networking."
+    ],
+    "conflict_resolution": [
+        "Approach conflicts with an open mind and a willingness to listen.",
+        "Consider finding common ground to facilitate discussion.",
+        "Use 'I' statements to express your feelings without placing blame.",
+        "Taking a break can sometimes help diffuse tension."
+    ],
+    "mindset": [
+        "Cultivating a growth mindset can open up new opportunities.",
+        "Embrace challenges as a chance to learn and grow.",
+        "Surrounding yourself with positive influences can help shift your mindset.",
+        "Reflect on past successes to remind yourself of your capabilities.",
+        "What is a growth mindset?",
+        "How can I develop a positive mindset?",
+        "What are the benefits of a strong mindset?",
+        "Can you give me examples of positive affirmations?"
+    ],
+    "dream_interpretation": [
+        "Dreaming about falling often symbolizes feelings of losing control or fear of failure.",
+        "Understanding your dreams can reveal insights about your subconscious thoughts and emotions.",
+        "Being chased in a dream can represent avoidance or fear of something in your waking life.",
+        "Recurring dreams may indicate unresolved issues or anxieties that need to be addressed."
+    ],
+    "art_appreciation": [
+        "You can learn to appreciate art by visiting galleries, studying art history, and exploring different styles.",
+        "Famous art movements include Impressionism, Cubism, Surrealism, and Abstract Expressionism.",
+        "Modern art encompasses a wide range of styles and is characterized by a departure from traditional forms.",
+        "The elements of art include line, shape, color, texture, space, and form."
+    ],
+    "sci-fi": [
+        "Some of the best science fiction books include 'Dune' by Frank Herbert, '1984' by George Orwell, and 'Neuromancer' by William Gibson.",
+        "A popular sci-fi movie to recommend is 'Blade Runner' or 'Inception'.",
+        "Famous sci-fi authors include Isaac Asimov, Arthur C. Clarke, and Philip K. Dick.",
+        "Common themes in sci-fi literature include technology, space exploration, time travel, and the nature of humanity."
+    ],
+    "mythology": [
+        "Greek mythology includes a rich tapestry of gods, goddesses, and heroes, such as Zeus, Athena, and Hercules.",
+        "Famous myths include the story of Hercules' Twelve Labors and the Trojan War.",
+        "Main gods in Norse mythology include Odin, Thor, and Freya.",
+        "Myths often convey moral lessons or explain natural phenomena."
+    ],
+    "urban_exploration": [
+        "Tips for urban exploration include researching locations, going with a friend, and respecting private property.",
+        "Some abandoned places to explore are old factories, schools, and amusement parks.",
+        "Safety precautions include wearing sturdy shoes, having a flashlight, and being aware of your surroundings.",
+        "Bring a camera, a first-aid kit, and a backpack with water and snacks for urban exploration."
+    ],
+    "personal_finance": [
+        "Start saving money by creating a budget, cutting unnecessary expenses, and setting savings goals.",
+        "Popular budgeting methods include the envelope system, zero-based budgeting, and the 50/30/20 rule.",
+        "Build an emergency fund by saving three to six months' worth of living expenses in a separate account.",
+        "Basics of investing include understanding stocks, bonds, mutual funds, and diversification."
+    ],
+    "collecting": [
+        "Popular things to collect include coins, stamps, antiques, and action figures.",
+        "To start a coin collection, research different types of coins and begin with a few that interest you.",
+        "When collecting stamps, focus on specific themes or countries to make your collection unique.",
+        "Tips for valuing your collection include researching market prices and getting items appraised."
+    ],
+    "nature": [
+        "Spending time in nature benefits mental health, reduces stress, and enhances creativity.",
+        "You can connect with nature by hiking, gardening, or practicing mindfulness outdoors.",
+        "Some beautiful natural parks to visit include Yellowstone, Yosemite, and the Great Smoky Mountains.",
+        "Nature is vital for mental health as it promotes relaxation and reduces anxiety."
+    ],
+    "sustainable_fashion": [
+        "Sustainable fashion focuses on eco-friendly materials, ethical labor practices, and minimizing waste.",
+        "To make your wardrobe more sustainable, choose quality over quantity and consider thrift shopping.",
+        "Eco-friendly clothing brands include Patagonia, Everlane, and Reformation.",
+        "Fast fashion is harmful because it contributes to pollution, waste, and unethical labor practices."
+    ],
+    "home_improvement": [
+        "Easy home improvement projects include painting a room, landscaping, or updating fixtures.",
+        "You can increase your home's value by renovating kitchens and bathrooms or enhancing curb appeal.",
+        "Essential tools for home repairs include a hammer, screwdrivers, a level, and a tape measure.",
+        "Eco-friendly home upgrades might include energy-efficient appliances, LED lighting, and solar panels."
+    ],
+    "virtual_meetings": [
+        "Improve your virtual meeting skills by practicing clear communication and using engaging visuals.",
+        "To engage an online audience, encourage participation and use interactive tools like polls.",
+        "Prepare for a virtual presentation by rehearsing your content and checking your tech setup.",
+        "Common virtual meeting etiquette includes being punctual, muting when not speaking, and dressing appropriately."
+    ],
+    "community_service": [
+        "Ideas for community service projects include organizing a food drive, tutoring, or park clean-ups.",
+        "To get involved in volunteering, reach out to local non-profits or community centers.",
+        "Benefits of community service include building connections, gaining skills, and making a positive impact.",
+        "Ways to support local charities include donating time, money, or resources and spreading awareness."
+    ],
+    "storytelling": [
+        "Elements of a good story include a compelling plot, well-developed characters, and a strong setting.",
+        "Improve your storytelling skills by reading widely, practicing writing, and seeking feedback.",
+        "Tips for writing fiction include outlining your plot, developing relatable characters, and showing rather than telling.",
+        "Famous storytelling techniques include the hero's journey, cliffhangers, and foreshadowing.",
+        "see Storytelling (disambiguation). The Boyhood of Raleigh by Sir John Everett Millais",
+        "oil on canvas",
+        "1870. A seafarer tells the young Walter Raleigh and his brother the story of what happened out at sea. Storytelling is the social and cultural activity of sharing stories",
+        "sometimes with improvisation",
+        "theatrics or embellishment. Every culture has its own narratives",
+        "which are shared as a means of entertainment",
+        "education", 
+        "[2] predates writing. The earliest forms of storytelling were usually oral",
+        "combined with gestures and expressions.[citation needed] Storytelling often has a prominent educational and performative role in religious rituals (for example",
+        "the Passover Seder[3])",
+        "and some archaeologists[which?] believe that rock art may have served as a form of storytelling for many[quantify] ancient cultures.[4] The Aboriginal Australian people painted symbols which also appear in stories on cave walls as a means of helping the storyteller remember the story. The story was then told using a combination of oral narrative",
+        "which bring understanding and meaning to human existence through the remembrance and enactment of stories.[5][page needed] People have used the carved trunks of living trees and ephemeral media (such as sand and leaves) to record folktales in pictures or with writing.[citation needed] Complex forms of tattooing may also represent stories"
+    ],
+    "public_policy": [
+        "Public policy refers to the principles and laws that govern a community or society.",
+        "Get involved in local politics by attending town hall meetings and engaging with community leaders.",
+        "Current public policy issues might include healthcare reform, climate change, and education policy.",
+        "You can advocate for change by raising awareness, contacting representatives, and participating in campaigns."
+    ],
+    "historical_figures": [
+        "Influential historical figures include Mahatma Gandhi, Martin Luther King Jr., and Marie Curie.",
+        "A famous inventor is Thomas Edison, known for the electric light bulb and phonograph.",
+        "Specific leaders have impacted history through revolutions, reforms, and global policies.",
+        "Lessons from historical events often highlight the importance of perseverance, leadership, and social justice."
+    ],
+    "philanthropy": [
+        "Philanthropy is the act of giving to promote the welfare of others, often through charitable donations.",
+        "To become a philanthropist, you can start by identifying causes you're passionate about and donating time or money.",
+        "Successful philanthropic efforts include the Bill and Melinda Gates Foundation and the Red Cross.",
+        "Giving back is important as it fosters community, supports those in need, and can create positive change."
+    ],
+    "digital_nomad": [
+        "A digital nomad is someone who works remotely while traveling or living in various locations.",
+        "To become a digital nomad, seek remote work opportunities and plan your travels accordingly.",
+        "Best countries for digital nomads often include Thailand, Portugal, and Mexico due to cost and connectivity.",
+        "Challenges digital nomads face include managing time zones, maintaining productivity, and finding stable internet."
+    ],
+    "entrepreneurial_mindset": [
+        "Having an entrepreneurial mindset means being open to innovation, willing to take risks, and resilient.",
+        "Cultivate an entrepreneurial mindset by embracing challenges, seeking knowledge, and networking.",
+        "Characteristics of successful entrepreneurs include adaptability, creativity, and strong problem-solving skills.",
+        "Resources for aspiring entrepreneurs include online courses, mentorship programs, and business books."
+    ],
+    "google": [
+        "Google is a search engine that allows users to find information online.",
+        "https://www.google.com",
+        "Google offers various services, including Gmail, Google Maps, and Google Drive.",
+        "Founded in 1998, Google is one of the largest technology companies in the world.",
+        "Google is a search engine that allows users to find information online. https://www.google.com Google offers various services",
+        "Google offers various services",
+        "including Gmail",
+        "Google Maps",
+        "and Google Drive.",
+        "https://www.google.com"
+    ],
+    "bing": [
+        "Bing is a web search engine owned by Microsoft.",
+        "https://www.bing.com",
+        "It provides search results for web pages, images, and videos.",
+        "Bing offers features like rewards for using the search engine.",
+        "https://www.bing.com",
+        "Bing is a web search engine owned by Microsoft.",
+        "Bing is a web search engine owned by Microsoft.",
+        "It provides search results for web pages",
+        "images",
+        "and videos.",
+        "Bing is a web search engine owned by Microsoft.",
+        "It provides search results for web pages",
+        "images",
+        "and videos.",
+        "It provides search results for web pages",
+        "images",
+        "and videos.",
+        "Bing is a web search engine owned by Microsoft.",
+        "images"
+    ],
+    "yahoo": [
+        "Yahoo is an internet services provider known for its search engine and web portal.",
+        "It offers news, email, finance, and more.",
+        "https://www.yahoo.com",
+        "Yahoo was one of the early pioneers of the internet.",
+        "Yahoo is an internet services provider known for its search engine and web portal. It offers news",
+        " email",
+        " finance",
+        " and more. https://www.yahoo.com Yahoo was one of the early pioneers of the internet."
+    ],
+    "gmail": [
+        "Gmail is a free email service developed by Google.",
+        "https://www.gmail.com",
+        "It provides a user-friendly interface and robust spam filtering.",
+        "Gmail allows users to send and receive emails, as well as organize them with labels."
+    ],
+    "outlook": [
+        "Outlook is a personal information manager from Microsoft.",
+        "https://www.outlook.com",
+        "It includes an email client, calendar, task manager, and contact manager.",
+        "Outlook integrates with Microsoft Office applications."
+    ],
+    "facebook": [
+        "Facebook is a social media platform that allows users to connect and share content.",
+        "https://www.facebook.com",
+        "It was founded by Mark Zuckerberg in 2004 and has billions of active users.",
+        "Facebook provides features like profiles, groups, and news feeds."
+    ],
+    "twitter": [
+        "Twitter is a microblogging platform where users post and interact through tweets.",
+        "https://www.x.com",
+        "https://www.twitter.com",
+        "It was launched in 2006 and is known for its character limit for posts.",
+        "Twitter is used for news, social commentary, and personal updates."
+    ],
+    "linkedin": [
+        "LinkedIn is a professional networking site used to connect job seekers and employers.",
+        "https://www.linkedin.com",
+        "It allows users to create profiles, share resumes, and network with professionals.",
+        "LinkedIn was founded in 2003 and has millions of users worldwide."
+    ],
+    "instagram": [
+        "Instagram is a photo and video sharing social networking service.",
+        "https://www.instagram.com",
+        "It was launched in 2010 and is known for its visual content and stories.",
+        "Instagram allows users to follow others and engage through likes and comments."
+    ],
+    "reddit": [
+        "Reddit is a social news aggregation and discussion website.",
+        "https://www.reddit.com",
+        "Users submit content to the site and engage in discussions through comments.",
+        "Reddit is organized into communities called subreddits, each focusing on specific topics."
+    ],
+    "youtube": [
+        "YouTube is a video sharing platform where users can upload, view, and share videos.",
+        "https://www.youtube.com",
+        "Founded in 2005, it has become a primary source for video content online.",
+        "YouTube allows creators to monetize their videos through ads and subscriptions.",
+        "YouTube allows creators to monetize their videos through ads and subscriptions."
+    ],
+    "quora": [
+        "Quora is a question-and-answer platform where users can ask questions and share knowledge.",
+        "https://www.quore.com",
+        "It allows individuals to contribute answers based on their expertise.",
+        "Quora has a diverse user base and covers a wide range of topics."
+    ],
+    "pinterest": [
+        "Pinterest is a visual discovery and bookmarking tool used for finding and saving ideas.",
+        "https://www.pinterest.com",
+        "Users can create boards to organize their interests and pin images from the web.",
+        "Pinterest is popular for DIY projects, recipes, and fashion inspiration."
+    ],
+    "tumblr": [
+        "Tumblr is a microblogging platform that allows users to share multimedia content.",
+        "It was launched in 2007 and is known for its community-driven content.",
+        "https://www.tumblr.com",
+        "Tumblr supports a variety of formats, including text, photos, quotes, and videos."
+    ],
+    "flickr": [
+        "Flickr is an image and video hosting service, primarily used for sharing photographs.",
+        "Founded in 2004, it allows users to upload and organize their media collections.",
+        "https://www.flickr.com",
+        "Flickr offers features like albums, tags, and social networking among photographers."
+    ],
+    "riddle": [
+        "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+        "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+        " How can a girl go 25 days without sleep?.....She sleeps and night!",
+        "How do you make the number one disappear?.....Add the letter G and it\u00e2\u20ac\u2122s 'gone'!",
+        " What will you actually find at the end of every rainbow?.....The letter 'w'",
+        "What can be caught but never thrown?.....A cold!",
+        "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+        " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+        "Why can't a bike stand on it's own?.....It is two-tired."
+    ],
     "date": [
         "Today's date is {date}.",
         "The current date is {date}."
@@ -31,81 +943,171 @@
         "The current date and time is {datetime}.",
         "Right now, it is {datetime}."
     ],
-    "pakistan drama series video": [
-        "Best Pakistani Dramas brings the best in terms of local and Turkish drama hits to your screens. We curate your favourite content from TV for you to sit back   . Aik Sitam Aur - Full Episodes \u00b7 Aik Sitam Aur Last Episode | Anmol Baloch & Usama Khan | Latest Pakistani Drama \u00b7 Aik Sitam Aur 2nd Last Episode | Anmol Baloch   . Pakistani Dramas is the Pakistan's Premier Youtube Channel Geared Towards Providing Quality Entertainment TV Dramas List for the Entire Family to all over   . . HUM TV is Pakistan's Premier Entertainment channel",
-        "providing quality entertainment and exceptional dramas",
-        "for viewers across the globe. . Pakistani Dramas channel is all about Pakistani Dramas media",
-        "news",
-        "information and entertainment. For more fun    . Pakistani Drama . . Latest Pakistani Dramas | Showbiz News | Pakistani TV Dramas | Pakistani Dramas Reviews | Pakistani Drama Ratings | Paktvdramas.pk. Watchdramasonline.tv is about to Watch and Download Pakistani TV Dramas",
-        "GEO TV Dramas",
-        "Ary Digital Dramas",
-        "Hum TV Dramas",
-        "PTV Home Dramas",
-        "GEO News and Ary   . Video Game Video Music Video Podcast Series Podcast Episode. Release   A Pakistani anthology television series conceived",
-        "produced",
-        "and directed by   . . . 493K Followers",
-        "631 Following",
-        "19K Posts - All Pakistan Drama Page (@allpakdramapageofficial) on Instagram: \"All about Pakistan\" . PK Sign in Home Shorts Subscriptions You History Best Pakistani Dramas @BestPakistaniDramas \u2022 5.19M subscribers \u2022 18K videos Best Pakistani Dramas brings the best in terms of local and Turkish drama hits to your screens. We curate your favourite content from TV for you to sit back",
-        "relax and enjoy!  more facebook.com/dramascentralbestpakistanidramas and 1 more link Subscribe Home Videos Shorts Live Playlists Community Mohabbat Ek Saza | Teaser 04 | New Turkish Drama | Coming Soon | Never Let Go | UA2O 14",
-        "110 views 1 month ago \"Mohabbat Ek Saza\" is a new upcoming Turkish Drama. Nur and Yigit's wedding night turns upside down when Yigit's first wife wakes up from a three-year coma. Will Yigit be able to retain both women in his life? READ MORE Crossroads l Thursday & Saturday l 8:00PM PKT Play all Crossroads tells the story of Burak",
-        "a billionaire driven by vengeance",
-        "and Haya",
-        "a dedicated game designer",
-        "whose lives diverged after a heart-wrenching breakup in college. When Haya's gaming firm collaborates with Burak's empire",
-        "fate rekindles buried emotions and desires. This unexpected reunion stirs long-dormant feelings and desires",
-        "laying the groundwork for a story of passion",
-        "redemption",
-        "and the complexities of the human heart.A DRM OriginalExclusive OTT Partner: VidlyLead Cast: Khushhal Khan",
-        "Mamya Shajaffar",
-        "Seemi RahealSupporting Cast: Asad Alvi",
-        "Hussain Rajput",
-        "Mahnoor Shah",
-        "Anam Husain",
-        "Areej Tariq",
-        "Mahnoor Pervaiz",
-        "Hamza MajeedCredits:Director: Fahad NurScreenplay Writer: Eric BergExecutive Producer: Muhammad Adnan ButtProducer: Bilal KhanDOP: Meer Tayyab KhanAssistant Director: Talha Jahangir Mir2nd Assistant Director: Arslan HanifVertical Camera Operator: Danish JavedProduction Managers: Syeda Eresha Bukhari",
-        "Zaryab Ali ZahidAudio: Mehar AliGaffer: Allah RakhaBackground Casting: Waqar AhmedLocation: Hafiz KhurramWardrobe: Ramsha Ijaz Wardrobe Courtesy: Outfitters & Munib NawazHair and Makeup: Hasnat SalonSet Design: Anam HusainBTS: Team J.PhotographyStills Photographer: Junaid MalikEditors: Talha Jahangir Mir",
-        "Zahoor Ahmed",
-        "Talha Tariq",
-        "Daryab Haider",
-        "Farooq ShafiqBTS Editors: Zaryab Ali Zahid",
-        "Azam Zia",
-        "Sanan AyubColorist: Abdul WahabAudio Mix and Master: Haider AliKey Art: Manish Mahi",
-        "Muhammad Bin YounasSocial Media Team: Muhammad Hamdan",
-        "Saad Abbas",
-        "Tahreem WaheedDistribution Team: Ali Azeem",
-        "Maaz Chaurdhry",
-        "Nazim Shah",
-        "Zahid NazirLocalisation Team: Aifer Imtiaz",
-        "Amna Iqbal",
-        "Areej Maqbool",
-        "Arsla Malik",
-        "Sumbal Hanif",
-        "Rabia Rehman Khan",
-        "Alishba Khan",
-        "Qurratulain Sufiyan",
-        "Shabnam Imtiaz",
-        "Maryam WahabSpecial Thanks: Saad Hamid (Game District)Raza Ahmed (Bamboo Union)Asad SheikhWaqar Mirza (Integrated Medical Care Hospital)Faisal Mushtaq (TMUC)Amna and Hassan (Something Haute)Crossroads also avalaible onTikok: drmdrama https://www.tiktok.com/@drmdrama Instagram: Lovable Souls https://www.instagram.com/ilovablesouls/ Facebook: Lovable Souls https://www.facebook.com/lovablesouls 8:40 Crossroads | Episode 01 | Full Episode | Khushhal Khan | Mamya Shahjaffar | 4K | FE1O Dramas Central 407K views 2 months ago CC 10:05 Crossroads | Episode 02 | Full Episode | Khushhal Khan | Mamya Shahjaffar | 4K | FE1O Dramas Central 216K views 2 months ago CC 8:10 Crossroads | Episode 03 | Full Episode | Khushhal Khan | Mamya Shahjaffar | 4K | FE10 Dramas Central 167K views 1 month ago CC Crossroads Episodes - Shorts (60 secs) Play all Ameer Boss Ko Muhabbat Mein Dhoka \ud83d\udc94\ud83d\ude32 | Crossroads Part 1#khushhalkhan #mamyashajaffar | FE2O Best Pakistani Dramas 2.5K views 2 months ago Billionaire Baby Ka University Main Breakup \u2764\ufe0f\u200d\ud83e\ude79 | Crossroads Part 2 #khushhalkhan | FE2O Best Pakistani Dramas 1.9K views 2 months ago Burak Apni Ex Ko Kiun Dhoondh Raha Hai? | Crossroads Part 04 | FE2O #crossroads Best Pakistani Dramas 808 views 2 months ago Junoon e Ishq Play all Drama Title : Junoon e Ishq Written by: Rabia Razzaq Directed by: Furqan Adam Produced by: Mastermind Production Cast: Dainsh Taimor Hiba Bukhari Mahmood Aslam Shaheen Khan Rabya Kulsoom Rameez Siddiqui Seemi Pasha Pakistani Drama | Junoon e Ishq - Episode 1 | Danish Taimoor & Hiba Bukhari | CO1O #danishtaimoor Best Pakistani Dramas 20M views 10 months ago CC Pakistani Drama | Junoon e Ishq - Episode 2 | Danish Taimoor & Hiba Bukhari | CO1O #danishtaimoor Best Pakistani Dramas 6.6M views 10 months ago CC Pakistani Drama | Junoon e Ishq - Episode 3 | Danish Taimoor & Hiba Bukhari | CO1O #danishtaimoor Best Pakistani Dramas 5M views 10 months ago Shorts Woh Uski Wahid Shikast Thi \ud83d\udc94\ud83d\udd25 #khushhalkhan #mamyashajaffar | FE2F 40 views The Twist That Changed EVERYTHING! #khushhalkhan #mamyashajaffar | FE2F 1.1K views Bes Scene \ud83d\udd25\ud83d\udd25 #crossroads #khushhalkhan #mamyashajaffar | FE2F 2K views Drama Films | Best Pakistani Dramas Play all Pehli Mohabbat | Full Movie | Aiman Khan",
-        "Adeel Chaudhry",
-        "Azekah Daniel | Romantic Love Story |C4B1G Best Pakistani Dramas 15M views 2 years ago Jhoota Pyar (\u062c\u06be\u0648\u0679\u0627 \u067e\u06cc\u0627\u0631) | Full Film | Sarah Khan",
-        "Agha Ali",
-        "Zalay | A Story of Betrayal | TA2G Best Pakistani Dramas 11M views 3 years ago Do Dil (\u062f\u0648 \u062f\u0644) | Full Film | Hazal Kaya",
-        "Hakan Kurtas",
-        "Asli Tandogan | Love Triangle Story | TA2G Best Pakistani Dramas 7.5M views 3 years ago Tera Mera Pyar | Best Pakistani Dramas Play all Tera Mera Pyar | EP 10 Promo |Turkish Drama| Burcu \u00d6zberk | \u00c7a\u011flar | Best Pakistani Dramas | RF2 Best Pakistani Dramas 23K views 4 years ago Tera Mera Pyar | EP 9 |Turkish Drama| Burcu \u00d6zberk | \u00c7a\u011flar Ertu\u011frul | Best Pakistani Dramas | RF1 Best Pakistani Dramas 125K views 4 years ago Tera Mera Pyar | EP 9 Promo |Turkish Drama| Burcu \u00d6zberk | \u00c7a\u011flar | Best Pakistani Dramas | RF2 Best Pakistani Dramas 28K views 4 years ago Fatmagul | Best Pakistani Dramas Play all Fatmagul | Mega Last Episode 169 | Turkish Drama | Urdu Dubbing | Best Pakistani Dramas | RH1N Best Pakistani Dramas 359K views 3 years ago Fatmagul | Episode 168 | Turkish Drama | Urdu Dubbing | Best Pakistani Dramas | RH1N Best Pakistani Dramas 260K views 3 years ago Fatmagul | Episode 167 | Turkish Drama | Urdu Dubbing | Best Pakistani Dramas | RH1N Best Pakistani Dramas 260K views 3 years ago Sunehri Titliyan | Best Pakistani Dramas Play all Sunehri Titliyan | Last EP 226 |Turkish Drama| Hande Ercel | TKD | Best Pakistani Dramas | RA1 Best Pakistani Dramas 622K views 4 years ago Sunehri Titliyan | Episode 226 Promo | Turkish Drama | Hande Ercel | TKD | Best Pakistani Dramas Best Pakistani Dramas 61K views 4 years ago Sunehri Titliyan | EP 225 |Turkish Drama| Hande Ercel | TKD | Best Pakistani Dramas | RA1 Best Pakistani Dramas 286K views 4 years ago Ishq e Mamnu | Best Pakistani Dramas Play all Ishq e Mamnu | Last EP 301 |Turkish Drama| Nihal & Behlul | Best Pakistani Dramas | RB1 Best Pakistani Dramas 1.3M views 4 years ago Ishq e Mamnu | EP 300 |Turkish Drama| Nihal & Behlul | Best Pakistani Dramas | RB1 Best Pakistani Dramas 207K views 4 years ago Ishq e Mamnu | EP 299 |Turkish Drama| Nihal & Behlul | Best Pakistani Dramas | RB1 Best Pakistani Dramas 148K views 4 years ago Sawal e Ishq | Turkish Drama | Best Pakistani Dramas Play all Sawal e Ishq | Last EP 192 | Black & White Love | Turkish Drama | Urdu Dubbing | BPD | RE1 Best Pakistani Dramas 62K views 4 years ago Sawal e Ishq | EP 192 Promo | Black & White Love | Turkish Drama | Urdu Dubbing | BPD | RE2 Best Pakistani Dramas 13K views 4 years ago Sawal e Ishq | EP 191 | Black & White Love | Turkish Drama | Urdu Dubbing | BPD | RE1 Best Pakistani Dramas 44K views 4 years ago Dot Republic Media Network View all C1 Shorts 285K subscribers Subscribe Talk Shows Central 6.49M subscribers Subscribe Dramas Central 6.65M subscribers Subscribe Failed to retrieve content from https://www.youtube.com/channel/UCyFbHB68DazkUxdq2WvPDfQ https://www.youtube.com/channel/UCyFbHB68DazkUxdq2WvPDfQ : https://www.youtube.com/watch?v=k6GGhlAFNAE https://yt3.googleusercontent.com/RsKKEk7fLIdmkiDX2hAIAM531d3R8miYszulYy3Gnofqk45Q7OPPgAtRdhm0lUdUkTCBPDX4=s160-c-k-c0x00ffffff-no-rj"
+    "wikipedia": [
+        "Your topic :  Wikipedia is a free content online encyclopedia written and maintained by a community of volunteers",
+        " known as Wikipedians",
+        " through open collaboration and the wiki software MediaWiki. Wikipedia is the largest and most-read reference work in history",
+        " and is consistently ranked among the ten most visited websites; as of August\u00a02024",
+        " it was ranked fourth by Semrush",
+        " and seventh by Similarweb. Founded by Jimmy Wales and Larry Sanger on January 15",
+        " 2001",
+        " Wikipedia has been hosted since 2003 by the Wikimedia Foundation",
+        " an American nonprofit organization funded mainly by donations from readers."
     ],
-    "how arre you": [
-        "Failed to load results on page 1: Message: Stacktrace: GetHandleVerifier [0x0x7ff63a8030f5+79493] GetHandleVerifier [0x0x7ff63a803150+79584] (No symbol) [0x0x7ff63a5801ba] (No symbol) [0x0x7ff63a5d8067] (No symbol) [0x0x7ff63a5d832c] (No symbol) [0x0x7ff63a62be27] (No symbol) [0x0x7ff63a60074f] (No symbol) [0x0x7ff63a628b8b] (No symbol) [0x0x7ff63a6004e3] (No symbol) [0x0x7ff63a5c8e92] (No symbol) [0x0x7ff63a5c9c63] GetHandleVerifier [0x0x7ff63aac0dbd+2954061] GetHandleVerifier [0x0x7ff63aabb02a+2930106] GetHandleVerifier [0x0x7ff63aadb357+3061991] GetHandleVerifier [0x0x7ff63a81d60e+187294] GetHandleVerifier [0x0x7ff63a82557f+219919] GetHandleVerifier [0x0x7ff63a80c294+116772] GetHandleVerifier [0x0x7ff63a80c449+117209] GetHandleVerifier [0x0x7ff63a7f2618+11176] BaseThreadInitThunk [0x0x7ff8e0ca7374+20] RtlUserThreadStart [0x0x7ff8e1bfcc91+33]"
+    "tell me about Imran Khan": [
+        "Jump to content Main menu Search Appearance Donate Create account Log in Toggle the table of contents Imran Khan 85 languages Article Talk Read View source View history Tools From Wikipedia",
+        "the free encyclopedia This article is about the politician and former cricketer. For other people with the same name",
+        "see Imran Khan (disambiguation). Imran Khan HI(C) PP FRCPE \u0639\u0645\u0631\u0627\u0646 \u062e\u0627\u0646 Khan in 2021 19th Prime Minister of Pakistan In office 18 August 2018 \u2013 10 April 2022 President Mamnoon Hussain Arif Alvi Preceded by Nasirul Mulk (caretaker) Succeeded by Shehbaz Sharif Chairman of the Pakistan Tehreek-e-Insaf In office 25 April 1996 \u2013 2 December 2023 Vice-Chairman Shah Mahmood Qureshi Preceded by Position established Succeeded by Gohar Ali Khan Member of the National Assembly In office 13 August 2018 \u2013 21 October 2022 Preceded by Obaidullah Shadikhel Constituency NA-95 Mianwali-I Majority 113",
+        "523 (44.89%) In office 19 June 2013 \u2013 31 May 2018 Preceded by Hanif Abbasi Succeeded by Sheikh Rashid Shafique Constituency NA-56 Rawalpindi-VII Majority 13",
+        "268 (8.28%) In office 10 October 2002 \u2013 3 November 2007 Preceded by Constituency established Succeeded by Nawabzada Malik Amad Khan Constituency NA-71 Mianwali-I Majority 6",
+        "204 (4.49%) Chancellor of the University of Bradford In office 7 December 2005 \u2013 8 December 2014 Preceded by Betty Lockwood Succeeded by Kate Swann Personal details Born Imran Ahmad Khan Niazi 5 October 1952 (age 73) Lahore",
+        "West Punjab",
+        "Pakistan Party Pakistan Tehreek-e-Insaf (since 1996) Spouses Jemima Goldsmith (m. 1995; div. 2004) Reham Khan (m. 2015; div. 2015) Bushra Bibi (m. 2018) Children 2 Relatives Family of Imran Khan Residences Bani Gala",
+        "Islamabad",
+        "Capital Territory Zaman Park",
+        "Lahore",
+        "Punjab Education Keble College",
+        "Oxford (B.A.) Awards See list Signature Nicknames Kaptaan (Captain) Qaidi No. 804 (Prisoner No. 804)[1][2] Cricket career Personal information Height 6 ft (183 cm)[3] Batting Right-handed Bowling Right-arm fast Role All-rounder International information National side Pakistan (1971\u20131992) Test debut (cap 88) 3 June 1971 v England Last Test 2 January 1992 v Sri Lanka ODI debut (cap 175) 31 August 1974 v England Last ODI 25 March 1992 v England Career statistics Competition Test ODI FC LA Matches 88 175 382 425 Runs scored 3",
+        "807 3",
+        "709 17",
+        "771 10",
+        "100 Batting average 37.69 33.41 36.79 33.22 100s/50s 6/18 1/19 30/93 5/66 Top score 136 102* 170 114* Balls bowled 19",
+        "458 7",
+        "461 65",
+        "224 19",
+        "122 Wickets 362 182 1287 507 Bowling average 22.81 26.61 22.32 22.31 5 wickets in innings 23 1 70 6 10 wickets in match 6 0 13 0 Best bowling 8/58 6/14 8/34 6/14 Catches/stumpings 28/\u2013 36/\u2013 117/\u2013 84/\u2013 show Medal record Source: ESPNcricinfo",
+        "5 November 2014 This article contains Urdu text. Without proper rendering support",
+        "you may see unjoined letters running left to right or other symbols instead of Urdu script. This article is part of a series about Imran Khan show Personal show Cricket career show 19th Prime Minister of Pakistan show Post-premiership show Elections show Politics vte Imran Ahmed Khan Niazi[a] (born 5 October 1952) is a Pakistani former cricketer",
+        "philanthropist",
+        "and politician who served as the 19th prime minister of Pakistan from August 2018 until April 2022. As a cricketer",
+        "he captained the Pakistan national cricket team to victory in the 1992 Cricket World Cup. After retiring from cricket",
+        "he founded the Shaukat Khanum Memorial Cancer Hospital and Research Centre",
+        "Pakistan's first cancer hospital. He is the founder of the political party Pakistan Tehreek-e-Insaf (PTI) and was its chairman from 1996 to 2023. Born in Lahore",
+        "he graduated from Keble College",
+        "Oxford. He began his international cricket career in a 1971 Test series against England. He advocated for neutral umpiring during his captaincy. He led Pakistan to its first-ever Test series victories in India and England during 1987. Playing until 1992",
+        "he captained the Pakistan national cricket team for most of the 1980s and early 1990s. In addition to achieving the all-rounder's triple of scoring 3",
+        "000 runs and taking 300 wickets in Tests",
+        "he holds the world record for the most wickets as a captain in Test cricket",
+        "along with the second-best bowling figures in an innings. Moreover",
+        "he has won the most Player of the Series awards in Test cricket for Pakistan and ranks fourth overall in Test history. In 2009",
+        "he was inducted into the ICC Cricket Hall of Fame. In his bachelorhood",
+        "he had several relationships and was associated with London's nightlife. His first girlfriend",
+        "Emma Sergeant",
+        "was",
+        "according to him",
+        "the one woman he truly loved before his first marriage. He had a relationship with Ana-Luisa (Sita) White",
+        "daughter of industrialist Gordon White. A California court ruled Khan to be the father of her daughter Tyrian Jade",
+        "though he denied paternity. He dated German MTV host Kristiane Backer",
+        "introducing her to Islam. He married Jemima Goldsmith in 1995",
+        "had two sons",
+        "and divorced in 2004 due to her difficulty adjusting to life in Pakistan. He married British-Pakistani journalist Reham Khan in January 2015",
+        "but they divorced in October the same year. He married his spiritual guide Bushra Bibi on 18 February 2018. He supported General Musharraf's 1999 Pakistani coup d'\u00e9tat. His political career involved perceived closeness to the military establishment",
+        "including contacts with several ISI chiefs. He became a member of the National Assembly of Pakistan for the first time in the 2002 election. He contested the 2018 Pakistani general election from five constituencies and became the first in Pakistan's electoral history to win all of them. He was elected prime minister in a PTI-led coalition government. During the COVID-19 pandemic",
+        "he launched Pakistan's largest welfare programme. In February 2022",
+        "he became the first Pakistani prime minister since 2002 to visit Moscow",
+        "arriving on the same day the Russian invasion of Ukraine began. During his premiership",
+        "he spoke out against Islamophobia in the western world. In April 2022",
+        "he became the first Pakistani prime minister to be removed from office through a no-confidence motion. He alleged US involvement in his removal",
+        "blaming Washington for opposing his foreign policy that sought closer relations with China and Russia. In October 2022",
+        "the Election Commission barred him for one term from the National Assembly over the Toshakhana case. In November",
+        "he survived an assassination attempt. In May 2023",
+        "he was arrested at the Islamabad High Court during a hearing related to the corruption charges; following the May 9 riots",
+        "he was released on protective bail a few days later. He was arrested again in August 2023. He has since been sentenced to 14 years in the Al-Qadir Trust case and",
+        "as of December 2024",
+        "faced 186 cases across Pakistan. He has alleged that his imprisonment is politically motivated",
+        "blaming the post-2022 military establishment and the Shehbaz Sharif government",
+        "both of which deny the claim. Early life and family Further information: Family of Imran Khan Khan with his uncle Javed Zaman",
+        "who would later become his cricket mentor",
+        "[4] c. 1957. Khan was born in Lahore on 5 October 1952.[5][b] He is the only son of Ikramullah Khan Niazi",
+        "a civil engineer",
+        "and his wife",
+        "Shaukat Khanum",
+        "and has four sisters.[8] Paternally",
+        "he is of Pathan origin from the Niazi tribe.[9][10] His maternal family is from the Burki community",
+        "[11] having lived near Jalandhar for centuries before migrating to Pakistan after Independence in 1947.[12][13] He attended Aitchison College and Cathedral School in Lahore.[14][15] He arrived at Royal Grammar School Worcester in England in September 1971 and performed well in cricket there.[16][17] In 1972",
+        "after being turned down by Cambridge University",
+        "[18] he was admitted to Keble College",
+        "Oxford",
+        "where he studied philosophy",
+        "politics and economics",
+        "graduating in 1975.[19] Paul Hayes",
+        "a cricket enthusiast",
+        "helped facilitate his entry.[18] Personal life Khan had several relationships in his bachelorhood.[20] He was known as a \"playboy\" who was active in London's nightlife",
+        "often visiting Tramp in St James's.[21][22] One or two of his girlfriends were called \"mysterious blondes\" in British tabloids. During the 1980s and 1990s",
+        "he was regarded as one of the most eligible bachelors.[23] His first girlfriend",
+        "Emma Sergeant",
+        "an artist and daughter of British investor Sir Patrick Sergeant",
+        "introduced him to socialites. The Times states Emma was the \"one woman he truly loved before his first marriage.\"[23] They met in 1982 and visited Pakistan. She accompanied him everywhere",
+        "including a hunting trip to Peshawar and a cricket tour to Australia.[24] She painted his portrait during their relationship at his request.[25] His Chelsea residence",
+        "near Sergeant's studio and Tramp",
+        "became central to his social life. After long separations",
+        "their relationship ended in 1986.[23] Jonathan Orders introduced him to Susie Murray-Philipson",
+        "whom he later invited to Pakistan and had dinner with in 1982. Their relationship did not progress",
+        "as Philipson felt out of place and found cultural differences irreconcilable. He also briefly dated Susannah Constantine",
+        "whom he met through Lulu Blacker; their relationship lasted about a year. Julia Verdin and Doone Murray were among other women associated with him",
+        "with their relationships receiving media attention.[23] Other women associated with him during this period include Zeenat Aman",
+        "[26] Sarah Crawley",
+        "Marie Helvin",
+        "[23] Stephanie Beacham",
+        "Caroline Kellett",
+        "Liza Campbell",
+        "Goldie Hawn",
+        "Sarah Giles",
+        "[27] Anastasia Cooke",
+        "and Hannah Rothschild. These relationships did not last",
+        "as he required residency in Pakistan for a serious",
+        "long-term commitment.[24] Ana-Luisa White",
+        "daughter of British industrialist Gordon White and later known as Sita",
+        "began her relationship with him in 1986",
+        "shortly after his breakup with Emma. The relationship lasted two years",
+        "ending when he reportedly wrote that he could not love her as Emma would always be the love of https://en.wikipedia.org/wiki/Imran_Khan : https://www.espncricinfo.com/cricketers/imran-khan-40560 https://en.wikipedia.org/w/resources/assets/mediawiki_compact.svg"
     ],
-    "how are you": [
-        "Failed to load results on page 1: Message: Stacktrace: GetHandleVerifier [0x0x7ff63a8030f5+79493] GetHandleVerifier [0x0x7ff63a803150+79584] (No symbol) [0x0x7ff63a5801ba] (No symbol) [0x0x7ff63a5d8067] (No symbol) [0x0x7ff63a5d832c] (No symbol) [0x0x7ff63a62be27] (No symbol) [0x0x7ff63a60074f] (No symbol) [0x0x7ff63a628b8b] (No symbol) [0x0x7ff63a6004e3] (No symbol) [0x0x7ff63a5c8e92] (No symbol) [0x0x7ff63a5c9c63] GetHandleVerifier [0x0x7ff63aac0dbd+2954061] GetHandleVerifier [0x0x7ff63aabb02a+2930106] GetHandleVerifier [0x0x7ff63aadb357+3061991] GetHandleVerifier [0x0x7ff63a81d60e+187294] GetHandleVerifier [0x0x7ff63a82557f+219919] GetHandleVerifier [0x0x7ff63a80c294+116772] GetHandleVerifier [0x0x7ff63a80c449+117209] GetHandleVerifier [0x0x7ff63a7f2618+11176] BaseThreadInitThunk [0x0x7ff8e0ca7374+20] RtlUserThreadStart [0x0x7ff8e1bfcc91+33]"
+    "My name is Arshad Ali": [
+        "Oh",
+        "I'll keep that in mind Arshad Ali"
     ],
-    "how are you?": [
-        "Failed to load results on page 1: Message: Stacktrace: GetHandleVerifier [0x0x7ff63a8030f5+79493] GetHandleVerifier [0x0x7ff63a803150+79584] (No symbol) [0x0x7ff63a5801ba] (No symbol) [0x0x7ff63a5d8067] (No symbol) [0x0x7ff63a5d832c] (No symbol) [0x0x7ff63a62be27] (No symbol) [0x0x7ff63a60074f] (No symbol) [0x0x7ff63a628b8b] (No symbol) [0x0x7ff63a6004e3] (No symbol) [0x0x7ff63a5c8e92] (No symbol) [0x0x7ff63a5c9c63] GetHandleVerifier [0x0x7ff63aac0dbd+2954061] GetHandleVerifier [0x0x7ff63aabb02a+2930106] GetHandleVerifier [0x0x7ff63aadb357+3061991] GetHandleVerifier [0x0x7ff63a81d60e+187294] GetHandleVerifier [0x0x7ff63a82557f+219919] GetHandleVerifier [0x0x7ff63a80c294+116772] GetHandleVerifier [0x0x7ff63a80c449+117209] GetHandleVerifier [0x0x7ff63a7f2618+11176] BaseThreadInitThunk [0x0x7ff8e0ca7374+20] RtlUserThreadStart [0x0x7ff8e1bfcc91+33]"
+    "what is my name": [
+        "Oooh great to meet you Arshad Ali. How may I assist you Arshad Ali"
     ],
-    "how are you/": [
-        "Failed to load results on page 1: Message: Stacktrace: GetHandleVerifier [0x0x7ff63a8030f5+79493] GetHandleVerifier [0x0x7ff63a803150+79584] (No symbol) [0x0x7ff63a5801ba] (No symbol) [0x0x7ff63a5d8067] (No symbol) [0x0x7ff63a5d832c] (No symbol) [0x0x7ff63a62be27] (No symbol) [0x0x7ff63a60074f] (No symbol) [0x0x7ff63a628b8b] (No symbol) [0x0x7ff63a6004e3] (No symbol) [0x0x7ff63a5c8e92] (No symbol) [0x0x7ff63a5c9c63] GetHandleVerifier [0x0x7ff63aac0dbd+2954061] GetHandleVerifier [0x0x7ff63aabb02a+2930106] GetHandleVerifier [0x0x7ff63aadb357+3061991] GetHandleVerifier [0x0x7ff63a81d60e+187294] GetHandleVerifier [0x0x7ff63a82557f+219919] GetHandleVerifier [0x0x7ff63a80c294+116772] GetHandleVerifier [0x0x7ff63a80c449+117209] GetHandleVerifier [0x0x7ff63a7f2618+11176] BaseThreadInitThunk [0x0x7ff8e0ca7374+20] RtlUserThreadStart [0x0x7ff8e1bfcc91+33]"
+    "what is time right now": [
+        "I noticed some negation in your words. Feel free to clarify."
     ],
-    "how are ": [
-        "Failed to load results on page 1: Message: Stacktrace: GetHandleVerifier [0x0x7ff7fc7fe8e5+80021] GetHandleVerifier [0x0x7ff7fc7fe940+80112] (No symbol) [0x0x7ff7fc58060f] (No symbol) [0x0x7ff7fc5d8854] (No symbol) [0x0x7ff7fc5d8b1c] (No symbol) [0x0x7ff7fc62c927] (No symbol) [0x0x7ff7fc60126f] (No symbol) [0x0x7ff7fc62968a] (No symbol) [0x0x7ff7fc601003] (No symbol) [0x0x7ff7fc5c95d1] (No symbol) [0x0x7ff7fc5ca3f3] GetHandleVerifier [0x0x7ff7fcabdc7d+2960429] GetHandleVerifier [0x0x7ff7fcab7f3a+2936554] GetHandleVerifier [0x0x7ff7fcad8977+3070247] GetHandleVerifier [0x0x7ff7fc8183ce+185214] GetHandleVerifier [0x0x7ff7fc81fe1f+216527] GetHandleVerifier [0x0x7ff7fc807b24+117460] GetHandleVerifier [0x0x7ff7fc807cdf+117903] GetHandleVerifier [0x0x7ff7fc7edbb8+11112] BaseThreadInitThunk [0x0x7ffec1c87374+20] RtlUserThreadStart [0x0x7ffec2cbcc91+33]"
+    "what is time?": [
+        "It's 21:12:00 right now."
+    ],
+    "What are the elements of a good story?": [
+        "___ Skip To Main Content MasterClass logo | Articles Browse Search Get All Community and Government Wellness Design & Style Arts & Entertainment Writing Sports & Gaming Science & Tech Music Food Home & Lifestyle Business WRITING The 5 Essential Elements of a Good Story Written by MasterClass Last updated: Sep 8",
+        "2021 \u2022 2 min read Learning how to write a good story is a lifelong pursuit. As a novice writer",
+        "perfecting your approach to story takes time and patience. Taking the time to understand the elements of a story and how they work together is an invaluable step in taking your writing to the next level. Learn From the Best Acting & Performing Arts category Art & Design category Business & Entrepreneurship category Community & Government category Film & TV category Food & Drink category Games & Digital Media category Health & Wellness category Music category Outdoor Adventures & Events category Science & Technology category Sports & Athletics category Writing category Teaches Screenwriting Teaches Creating Outside the Lines Teaches Filmmaking Teaches Documentary Filmmaking Get SAVE SHARE Share on twitter Share on facebook Share on pinterest Share on your network Jump To Section 5 Elements of a Good Story Want to Learn More About Writing? Dan Brown Teaches Writing Thrillers 5 Elements of a Good Story There are a few basic elements that are necessary to construct a good story. A good place to look for a clear illustration of these elements is fairy tales. Fairy tales are universally accessible narratives with clear stakes",
+        "effective story structure",
+        "and memorable characters. If you\u2019re struggling to understand how any of these elements work in context",
+        "turning to fairy tales or fables to look for examples can be a useful step. The elements of story are also present in both novel-length pieces of fiction and short stories. Some of these elements are applicable to nonfiction narratives as well. Some of the key elements of a good story include: 1. Premise: A premise sets up the location",
+        "characters",
+        "and circumstances your readers need to understand before you launch into the story\u2019s plot. A premise includes physical location",
+        "like an elementary school or hospital",
+        "as well as the basic expository information that readers need to understand at the beginning of your story. 2. Plot: The plot is the sequence of events that make up the action of your story. Understanding the elements of plot is vital for any writer. A plot progresses chronologically from an inciting incident and rising action to a climax that spills over into falling action followed by resolution. 3. Character: Plot cannot exist in a vacuum; it requires different characters who participate in and advance the story. Character development is one of the most important literary elements. Developing a main character and secondary characters is a core part of a writer\u2019s narrative process. Character affects the point of view of your story",
+        "especially if you decide to tell it in first-person as opposed to third-person. Each of your characters has their own story",
+        "and it\u2019s up to you how much to show to your readers. Secondary characters can be used to advance the main plot as well as subplots. 4. Prose: The sentence structure and word choices you implement in your writing are also key elements of your story. Deciding whether to write in the vernacular of a first-person narrator or in the more neutral voice of a third-person omniscient narrator is an important decision that will affect your prose. 5. Theme: The themes of your story tie in with the larger takeaway you hope your readers draw from your story. Theme is built through narrative and is one of the essential elements of story. Theme requires work on the part of your reader to discern a larger message and draw connections between elements of your story and the human condition at large. Learn how to develop a theme for your story here. Meet One of Your New Instructors Get Want to Learn More About Writing? Become a better writer with the Masterclass Annual Membership. Gain access to exclusive video lessons taught by literary masters",
+        "including David Baldacci",
+        "Joyce Carol Oates",
+        "Dan Brown",
+        "Margaret Atwood",
+        "and more. Try some of our classes Enter your email and we\u2019ll send you some samples of our favorite classes. Email I agree to receive marketing emails about MasterClass and other related learning products. By clicking \"Submit\" and sharing your email",
+        "you agree to our Terms of Service and Privacy Policy. Submit FEATURED MASTERCLASS INSTRUCTOR DAN BROWN In his first-ever online class",
+        "best-selling author Dan Brown teaches you his step-by-step process for turning ideas into page-turning novels. Explore The Class LEVEL UP YOUR TEAM See why leading organizations rely on MasterClass for learning & development. Contact Sales Learn More WRITING How To Write A Horror Story In 7 Steps Dec 8",
+        "2021 WRITING Learn The Difference Between Phrases And Clauses Aug 11",
+        "2021 WRITING Self-Editing Tips: How To Revise A Novel Or Short Story Sep 29",
+        "2021 WRITING What Is Ottava Rima Poetry? 5 Examples Of Ottava Rima Aug 26",
+        "2021 WRITING Periods And Parentheses: Do Periods Go Outside Parentheses? Aug 24",
+        "2021 WRITING How To Plot A Short Story: 5 Steps For Short Story Plotting Aug 20",
+        "2021 OTHER ARTICLES Types of Asparagus: 6 Popular Asparagus Varieties Aug 11",
+        "2021 How to Hang Curtains Without Drilling: 3 Easy Methods May 5",
+        "2022 Social Criticism: Types of Social Criticism Dec 14",
+        "2022 Learn About Gross National Product: Definition and Formula for Calculating GNP Oct 12",
+        "2022 Claude Debussy: A Guide to Claude Debussy\u2019s Life and Music Jun 26",
+        "2021 How to Play Basketball: Explore the Basics of Basketball Jun 7",
+        "2021 Explore Articles Sitemap Gifts Member Wins About Diversity",
+        "Equity",
+        "and Inclusion Careers Newsroom Security Privacy Terms Social Impact MasterClass at Work Support Social Twitter Instagram Facebook YouTube LinkedIn Download Download on the App Store Get it on Google Play Available at amazon app store Available on Roku MasterClass homepage \u00a9 2026 MasterClass Secured with SSL https://www.masterclass.com/articles/the-essential-elements-of-a-good-story : https://www.prodigygame.com/main-en/blog/story-elements https://www.googleadservices.com/pagead/conversion/952839809/?label=2e1HCMP075gbEIHdrMYD&guid=ON&script=0"
     ]
 }

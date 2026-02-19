@@ -1,44 +1,31 @@
-from collections import ChainMap
-from curses import meta
-import curses, base64, django, datetime, uuid, re , requests
-from fileinput import FileInput 
-from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
-from django.urls import reverse
-from django.shortcuts import redirect, render, get_object_or_404
-from django.template import loader
-from django.contrib.sites.shortcuts import get_current_site
-from django.template.loader import render_to_string
-from django.contrib.auth.decorators import login_required  
-from django.contrib import messages
-from django.core.mail import EmailMessage, send_mail
-from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
-from django.utils.encoding import force_bytes, force_str 
-from django.conf import settings 
-from Task_Project import settings
-from django.contrib.auth import authenticate, login, logout 
-import nltk,  spacy, re , requests, time
-from django.views.decorators.http import require_http_methods 
-from nltk.corpus import stopwords, wordnet, stopwords
-from .models import Conversation   
-from nltk import pos_tag, word_tokenize, ne_chunk 
-from nltk.stem import WordNetLemmatizer 
-from difflib import get_close_matches
+from django.http import HttpResponse
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer   
+from nltk.corpus import stopwords    
 from collections import defaultdict  
-import json, random, os, logging 
 from django.core.cache import cache 
-from nltk.tokenize import word_tokenize    
-from collections import Counter   
-from textblob import TextBlob 
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from django.template import loader  
+from Task_Project import settings     
+from .models import Conversation     
+from nltk import word_tokenize   
+from textblob import TextBlob   
+import  datetime 
+import  random
+import  spacy
+import  time
+import  json 
+import nltk 
+import  re 
+import  os     
  
-from bs4 import BeautifulSoup
 from selenium import webdriver   
-from selenium.webdriver.common.by import By  # Import the By class
-from urllib.parse import quote  
+from selenium.webdriver.common.by import By 
 from selenium.webdriver.chrome.options import Options  
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service  
+from webdriver_manager.chrome import ChromeDriverManager 
 
+ 
 # Load NLP models
 nlp = spacy.load("en_core_web_sm")
 analyzer = SentimentIntensityAnalyzer()
@@ -62,12 +49,10 @@ def load_intents():
 
 def load_emotions():
     return load_json_file(emotion_file)
-
-# Validate user input
+ 
 def validate_user_input(user_input):
     return bool(user_input.strip()) and not re.search(r'<script>|<\/script>', user_input)
-
-# Predict intent from user input 
+ 
 def predict_intent(user_input, intents):
     tokens = word_tokenize(user_input.lower())
     filtered_tokens = [lemmatizer.lemmatize(token) for token in tokens if token not in stopwords.words('english')]
@@ -86,25 +71,7 @@ def predict_intent(user_input, intents):
     
     return [intent for intent, score in sorted(intent_scores.items(), key=lambda x: x[1], reverse=True) if score > 0]
 
-
 # Extract entities from user input
-'''
-def extract_entities(user_input):
-    doc = nlp(user_input)
-    entities = {ent.label_.lower(): ent.text for ent in doc.ents if ent.label_ in {'PERSON', 'GPE'}}
-    return entities
-
-# Fetch user data based on previous conversations
-def fetch_user_data(user_email):
-    conversations = Conversation.objects.filter(user_email=user_email)
-    previous_data = {}
-
-    for conv in conversations:
-        entities = extract_entities(conv.user_input)
-        previous_data.update(entities)
-
-    return previous_data
-'''
 def extract_entities(user_input):
     doc = nlp(user_input)
     entities = {}
@@ -210,6 +177,7 @@ def analyze_sentiment(user_input):
 
     return response
 
+
 # Generate combined responses
 def get_combined_responses(queries, responses, user_email):
     combined_responses = []
@@ -243,7 +211,7 @@ def get_combined_responses(queries, responses, user_email):
                 combined_responses.append(response_template)
 
     return " ".join(combined_responses)
-
+ 
 # Adding intents and responses to JSON
 def add_intent_to_json(intent_name, keywords):
     intents = load_intents()
@@ -265,7 +233,7 @@ def add_response_to_json(intent_name, responses):
     with open(response_file, 'w') as f:
         json.dump(response_data, f, indent=4)
     return f"Responses added successfully to intent '{intent_name}'."
-
+   
 def find_keywords(response):
     keywords = ["image", "photo", "picture", "pics", "img", "photos", "images", "pictures"]
     action_words = ["create", "made", "make", "send", "sent"]
@@ -289,72 +257,105 @@ def find_keywords(response):
         phrases = [f"{action} {keyword}" for action in found_actions for keyword in found_keywords]
 
     # Also return single keywords found
-    return phrases, found_keywords if phrases else found_keywords
+    return phrases, found_keywords if phrases else found_keywords 
 
-    return None  # Return None if no keywords or action words found
+ 
 def fetch_google_summary(query, max_pages=2):
-    url = f"https://www.google.com/search?q={query.replace(' ', '+')}"
+    print("query :", query) 
+    url = f"https://www.google.com/search?q={query.replace(' ', '+')}&hl=en&gl=us"
+    print("query :", url)
     chrome_options = Options()
-    chrome_options.add_argument("--headless")
+    # chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--disable-software-rasterizer")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--disable-extensions")
+    chrome_options.add_argument("--disable-background-networking")
+    chrome_options.add_argument("--disable-sync")
+    chrome_options.add_argument("--disable-notifications")
+    chrome_options.add_argument("--log-level=3") 
+    chrome_options.add_argument("--remote-allow-origins=*")
+    chrome_options.add_argument("--disable-blink-features=AutomationControlled")
      
+    chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
+    chrome_options.add_argument(
+        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    )
+  
+
     try:
-        driver = webdriver.Chrome(options=chrome_options)
+        service = Service(ChromeDriverManager().install()) 
+        driver = webdriver.Chrome(service=service, options=chrome_options)
+
+        driver.execute_cdp_cmd(
+            "Page.addScriptToEvaluateOnNewDocument",
+            {
+                "source": """
+                Object.defineProperty(navigator, 'webdriver', {
+                    get: () => undefined
+                })
+                """
+            },
+        )
     except Exception as e:
         return f"Error initializing browser: {str(e)}"
     
     driver.get(url) 
-    search_results = [] 
-    image_links = []  # List to hold image links
+    search_results = []
+    image_links = []
     current_page = 1
     first_link = None
     
     while current_page <= max_pages: 
         try:
             WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, 'div.g'))
-            )
+                EC.presence_of_element_located((By.CSS_SELECTOR, "div#search, input[name='q']"))
+                # EC.presence_of_element_located((By.XPATH, "//h3"))
+            )  
         except Exception as e:
             driver.quit()
-            return f"Failed to load results on page {current_page}: {str(e)}"
-         
-        # Try to extract featured snippet if available
+            return f"Google search timed out. The page structure may have changed. {current_page}: {str(e)}"
+          
         try:
             featured_snippet = driver.find_element(By.CSS_SELECTOR, 'span.hgKElc')
             snippet_text = featured_snippet.text.strip()
-            search_results.append(f"{snippet_text.replace('...', f'.')}")
+            search_results.append(f"{snippet_text.replace('...', ".")}")
         except Exception as e:
-            print(".")  # No featured snippet found on this page
+            print(".", str(e))  
          
-        results = driver.find_elements(By.CSS_SELECTOR, 'div.g')
+        results = driver.find_elements(By.XPATH, "//div[@id='search']//h3")
         for result in results:
             try:
-                title_element = result.find_element(By.TAG_NAME, 'h3')
-                title = title_element.text.strip() if title_element else "No title"
+                title = result.text.strip()
+                print("TITLE:", title)
+                print("TITLE In:", driver.title)
                 
-                link_element = result.find_element(By.CSS_SELECTOR, 'a')
-                link = link_element.get_attribute('href').strip() if link_element else None
+                # link_element = result.find_element(By.CSS_SELECTOR, 'a')
+                link = result.find_element(By.XPATH, "./ancestor::a").get_attribute("href")
+                print("LINK:", link)
+
                 if first_link is None:
                     first_link = link
-                
-                # Extracting snippets from search results
-                try:  
-                    snippet_element = result.find_element(By.CLASS_NAME, 'VwiC3b')
-                    snippet = snippet_element.text.strip() if snippet_element else "."
-                except:
+                print("resultSS: ", results) 
+                container = result.find_element(By.XPATH, "./ancestor::div[@class='g']")
+                try:
+                    snippet_element = container.find_element(By.CLASS_NAME, "VwiC3b")
+                    snippet = snippet_element.text.strip()
+                except Exception as e:
+                    print(str(e))
                     snippet = "."
                 
                 search_results.append(f"{snippet} ")
-                
-                # Check for any image links in the result
+                 
                 try:
                     img_element = result.find_element(By.TAG_NAME, 'img')
                     img_link = img_element.get_attribute('src').strip()
                     if img_link:
-                        image_links.append(img_link)  # Store image link
-                except:
-                    pass  # No image found in this result
+                        image_links.append(img_link)  
+                except Exception as e:
+                    print(f"{"Error processing inner Block"}", str(e))  
 
             except Exception as e:
                 print(f"Error processing result: {str(e)}")
@@ -363,23 +364,22 @@ def fetch_google_summary(query, max_pages=2):
         try:
             next_button = driver.find_element(By.ID, 'pnnext')
             next_button.click()
-            time.sleep(3)  # Slight delay to allow the next page to load
+            time.sleep(3)  
             current_page += 1
         except Exception as e:
-            print(".")  # No more pages available
+            print(".", str(e))   
             break
-     
-    # If first link is found, open and scrape it
+    print("resultSSS: ", results)
+    print("TITLE end:", driver.title)
     if first_link:
-        driver.execute_script("window.open('');")  # Open a new tab
-        driver.switch_to.window(driver.window_handles[1])  # Switch to the new tab
-        driver.get(first_link)  # Open the first found link
+        driver.execute_script("window.open('');") 
+        driver.switch_to.window(driver.window_handles[1])  
+        driver.get(first_link) 
 
-        try:
-            # Wait for the new page to load and scrape the content
+        try: 
             WebDriverWait(driver, 7).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
-            page_content = driver.find_element(By.TAG_NAME, 'body').text[:10000].strip()  # Get first 10000 characters of content
-            search_results.append(f' \n\n ' + f"{page_content}" + f' \n\n ')
+            page_content = driver.find_element(By.TAG_NAME, 'body').text[:10000].strip()  
+            search_results.append(f"{' \n\n '}" + f"{page_content}" + f"{' \n\n '}")
 
             # Check for images on the opened page
             img_elements = driver.find_elements(By.TAG_NAME, 'img')
@@ -389,25 +389,42 @@ def fetch_google_summary(query, max_pages=2):
                     image_links.append(f"{first_link} :- {img_link}")
         
         except Exception as e:
-            search_results.append(f"Failed to retrieve content from {first_link}\n\n")
+            search_results.append(f"Failed to retrieve content from {first_link}\n\n", str(e))
         
         driver.close()  # Close the tab
-        driver.switch_to.window(driver.window_handles[0])  # Switch back to the original search results tab
+        driver.switch_to.window(driver.window_handles[0])  
     
     driver.quit()
-    
     found_words, single_keywords = find_keywords(query)
     valid_combinations = {
         "image", "images", "img",  
-        "create image", "create photo", "create picture", "create pics", "create img", "create images", "create photos", "create pictures",
-        "photo", "photos"
+        "an image", "an images", "an img", 
+        "one image", "one images", "one img",
+        "many image", "many images", "many img",
+        "more image", "more images", "more img",
+        "create image", "create photo", "create picture", "create pics", "create img", "create images", "create photos", "create pictures", 
+        "create an image", "create an photo", "create an picture", "create an pics", "create an img", "create an images", "create an photos", "create an pictures",
+        "create a image", "create a photo", "create a picture", "create a pics", "create a img", "create a images", "create a photos", "create a pictures",
+        "create one image", "create one photo", "create one picture", "create one pics", "create one img", "create one images", "create one photos", "create one pictures",
+        "create more image", "create more photo", "create more picture", "create more pics", "create more img", "create more images", "create more photos", "create more pictures",
+        "create many image", "create many photo", "create many picture", "create many pics", "create many img", "create many images", "create many photos", "create many pictures",
+        "photo", "photos",
         "make image", "make photo", "make picture", "make pics", "make img", "make images", "make photos", "make pictures",
-        "picture","picture", 
-        "made image", "made photo", "made picture", "made pics", "made img" "made images", "made photos", "made pictures", 
-        "send image", "send photo", "send picture", "send images", "send pictures", "send photos", "send img", "send pics" 
-        "sent image", "sent photo", "sent picture", "sent images", "sent pictures", "sent photos", "sent img", "sent pics"
-    }
-
+        "make an image", "make an photo", "make an picture", "make an pics", "make an img", "make an images", "make an photos", "make an pictures",
+        "make a image", "make a photo", "make a picture", "make a pics", "make a img", "make a images", "make a photos", "make a pictures",
+        "make one image", "make one photo", "make one picture", "make one pics", "make one img", "make one images", "make one photos", "make one pictures",
+        "make more image", "make more photo", "make more picture", "make more pics", "make more img", "make more images", "make more photos", "make more pictures",
+        "make many image", "make many photo", "make many picture", "make many pics", "make many img", "make many images", "make many photos", "make many pictures",
+        "picture", "picture", 
+        "made image", "made photo", "made picture", "made pics", "made img", "made images", "made photos", "made pictures", 
+        "made a image", "made a photo", "made a picture", "made a pics", "made a img", "made a images", "made a photos", "made a pictures", 
+        "made one image", "made one photo", "made one picture", "made one pics", "made one img", "made one images", "made one photos", "made one pictures", 
+        "made many image", "made many photo", "made many picture", "made many pics", "made many img", "made many images", "made many photos", "made many pictures", 
+        "made more image", "made more photo", "made more picture", "made more pics", "made more img", "made more images", "made more photos", "made more pictures",  
+        "send image", "send photo", "send picture", "send images", "send pictures", "send photos", "send img", "send pics", 
+        "sent image", "sent photo", "sent picture", "sent images", "sent pictures", "sent photos", "sent img", "sent pics",
+        "sent an image", "sent an photo", "sent an picture", "sent an images", "sent an pictures", "sent an photos", "sent an img", "sent an pics"
+    } 
     # Check for any valid combination in found words
      
     if image_links:
@@ -425,15 +442,14 @@ def fetch_google_summary(query, max_pages=2):
 
 def clear_multiple_whitespaces(text): 
     return re.sub(r'\s+', ' ', text).strip()
-import re
+ 
 
-def format_code_like_syntax(text):
-    # Regular expression patterns to detect code-like patterns
+def format_code_like_syntax(text): 
     function_pattern = re.compile(
         r'\b(public|private|protected|static|def|var|function|void)?\s*'
         r'(int|float|char|bool|void)?\s*([a-zA-Z_][a-zA-Z0-9_]*)\s*\(([^)]*)\)(\s*\{.*\})?'
     )
-    # Apply formatting to code-like functions and method declarations
+    
     formatted_text = function_pattern.sub(
         r'<br><i><span style="font-family: monospace; background-color: lightgray;">\1 \2 \3(\4)\5</span></i>', text
     )
@@ -441,7 +457,7 @@ def format_code_like_syntax(text):
     return formatted_text.replace(formatted_text, f"{formatted_text} <br>")
 
 def replace_dots_except_in_urls_and_titles(text):
-    # Handle URLs and common abbreviations to prevent accidental period replacements
+    
     url_pattern = re.compile(r'(https?://[^\s]+)')
     urls = url_pattern.findall(text)
 
@@ -452,8 +468,7 @@ def replace_dots_except_in_urls_and_titles(text):
     
     for i, abbrev in enumerate(abbreviations):
         text = text.replace(abbrev, f"__ABBREV_{i}__")
-    
-    # Replace dots followed by space with breaks, skipping known abbreviations
+     
     text = text.replace(". ", ".<br>")
 
     for i, abbrev in enumerate(abbreviations):
@@ -470,9 +485,7 @@ def format_bot_response(response):
     formatted = replace_dots_except_in_urls_and_titles(formatted)
       
     formatted = format_code_like_syntax(formatted)
-     
-    # YouTube Embed        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-    
+      
     # Default iframe for other links
     url_pattern = re.compile(r'(https?://[^\s]+)')
     formatted = url_pattern.sub(r'<br><iframe src="\1" class="responsive-iframe" target="_blank" ></iframe><br>', formatted) 
@@ -519,8 +532,6 @@ def format_bot_response(response):
     
     return formatted
 
-
-
 # Chatbot main function
 def chatbot(request):
     template = loader.get_template('chat.html')
@@ -544,13 +555,13 @@ def chatbot(request):
         intent_name = user_input
         if intent_name and keywords:
             keywords_list = keywords.split(",")
-            add_intent_message = add_intent_to_json(intent_name, keywords_list)  # Add intent
+            add_intent_to_json(intent_name, keywords_list)  # Add intent
 
         response_intent = keywords
         new_responses = new_combined_response
         if response_intent and new_responses:
             response_list = new_responses.split(",")  
-            add_response_message = add_response_to_json(response_intent, response_list)
+            add_response_to_json(response_intent, response_list)
     
         # Store the conversation
         Conversation.objects.create(user_email=user_email, user_input=user_input, bot_response = new_combined_response)
@@ -565,3 +576,179 @@ def chatbot(request):
     return HttpResponse(template.render(context, request))
 
  
+
+# # Chatbot main function
+# def chatbot(request):
+#     template = loader.get_template('chat.html')
+#     user_email = request.user.email
+#     msg_show = Conversation.objects.filter(user_email=user_email)  
+    
+#     if request.method == "POST":
+#         user_input = request.POST.get('user_input')
+
+#         if not validate_user_input(user_input):
+#             context = {'error': "Invalid input", 'success': '', 'msg_show': msg_show}
+#             return HttpResponse(template.render(context, request)) 
+#         if is_rate_limited(user_email) or rate_limit_phrases(user_input, user_email):
+#             context = {'error': "Please wait before sending another message.", 'success': '', 'msg_show': msg_show}
+#             return HttpResponse(template.render(context, request))
+ 
+#         combined_response = get_combined_responses([user_input], load_responses(), user_email)
+#         combined_response_new = clear_multiple_whitespaces(combined_response)
+#         new_combined_response = combined_response_new.replace("...", " ").replace('....', " ").replace("\n", " ").replace("--", " ").replace("---", " ").replace("----", " ").replace("!!!", "!")  
+#         keywords = user_input
+#         intent_name = user_input
+#         if intent_name and keywords:
+#             keywords_list = keywords.split(",")
+#             add_intent_message = add_intent_to_json(intent_name, keywords_list)  # Add intent
+
+#         response_intent = keywords
+#         new_responses = new_combined_response
+#         if response_intent and new_responses:
+#             response_list = new_responses.split(",")  
+#             add_response_message = add_response_to_json(response_intent, response_list)
+    
+#         # Store the conversation
+#         Conversation.objects.create(user_email=user_email, user_input=user_input, bot_response = new_combined_response)
+#         for msg in msg_show: 
+#             msg.bot_response = format_bot_response(msg.bot_response) 
+#         context = {'error': '', 'success': '', 'msg_show': msg_show}
+#         return HttpResponse(template.render(context, request))
+    
+#     for msg in msg_show: 
+#         msg.bot_response = format_bot_response(msg.bot_response) 
+#     context = {'error': '', 'success': '', 'msg_show': msg_show}
+#     return HttpResponse(template.render(context, request))
+
+
+#   # valid_combinations = {
+#     #     "image", "images", "img",  
+#     #     "an image", "an images", "an img", 
+#     #     "one image", "one images", "one img",
+#     #     "many image", "many images", "many img",
+#     #     "more image", "more images", "more img",
+#     #     "create image", "create photo", "create picture", "create pics", "create img", "create images", "create photos", "create pictures", 
+#     #     "create an image", "create an photo", "create an picture", "create an pics", "create an img", "create an images", "create an photos", "create an pictures",
+#     #     "create a image", "create a photo", "create a picture", "create a pics", "create a img", "create a images", "create a photos", "create a pictures",
+#     #     "create one image", "create one photo", "create one picture", "create one pics", "create one img", "create one images", "create one photos", "create one pictures",
+#     #     "create more image", "create more photo", "create more picture", "create more pics", "create more img", "create more images", "create more photos", "create more pictures",
+#     #     "create many image", "create many photo", "create many picture", "create many pics", "create many img", "create many images", "create many photos", "create many pictures",
+#     #     "photo", "photos",
+#     #     "make image", "make photo", "make picture", "make pics", "make img", "make images", "make photos", "make pictures",
+#     #     "make an image", "make an photo", "make an picture", "make an pics", "make an img", "make an images", "make an photos", "make an pictures",
+#     #     "make a image", "make a photo", "make a picture", "make a pics", "make a img", "make a images", "make a photos", "make a pictures",
+#     #     "make one image", "make one photo", "make one picture", "make one pics", "make one img", "make one images", "make one photos", "make one pictures",
+#     #     "make more image", "make more photo", "make more picture", "make more pics", "make more img", "make more images", "make more photos", "make more pictures",
+#     #     "make many image", "make many photo", "make many picture", "make many pics", "make many img", "make many images", "make many photos", "make many pictures",
+#     #     "picture", "picture", 
+#     #     "made image", "made photo", "made picture", "made pics", "made img", "made images", "made photos", "made pictures", 
+#     #     "made a image", "made a photo", "made a picture", "made a pics", "made a img", "made a images", "made a photos", "made a pictures", 
+#     #     "made one image", "made one photo", "made one picture", "made one pics", "made one img", "made one images", "made one photos", "made one pictures", 
+#     #     "made many image", "made many photo", "made many picture", "made many pics", "made many img", "made many images", "made many photos", "made many pictures", 
+#     #     "made more image", "made more photo", "made more picture", "made more pics", "made more img", "made more images", "made more photos", "made more pictures",  
+#     #     "send image", "send photo", "send picture", "send images", "send pictures", "send photos", "send img", "send pics", 
+#     #     "sent image", "sent photo", "sent picture", "sent images", "sent pictures", "sent photos", "sent img", "sent pics",
+#     #     "sent an image", "sent an photo", "sent an picture", "sent an images", "sent an pictures", "sent an photos", "sent an img", "sent an pics"
+#     # }
+
+
+
+
+# 0000000000000000000000000000000000000000000
+
+# def find_keywords(response):
+#     keywords = ["image", "photo", "picture", "pics", "img", "photos", "images", "pictures"]
+#     action_words = ["create", "made", "make", "send", "sent"]
+
+#     found_keywords = [word for word in keywords if word in response.lower()]
+#     found_actions = [action for action in action_words if action in response.lower()]
+
+#     phrases = []
+#     if found_keywords and found_actions:
+#         phrases = [f"{action} {keyword}" for action in found_actions for keyword in found_keywords]
+
+#     return phrases, found_keywords
+
+
+# def get_combined_responses(queries, responses, user_email):
+#     combined_responses = []
+#     previous_data = fetch_user_data(user_email)
+
+#     for query in queries:
+#         query = query.strip()
+#         if not query:
+#             continue
+#         intents_user = predict_intent(query, load_intents())
+#         entities = extract_entities(query)
+#         name = entities.get('name', previous_data.get('name', "there"))
+
+#         sentiment_response = analyze_sentiment(query)
+            
+#         if is_image_request(query):
+#             combined_responses.append(fetch_google_summary(query))
+#         elif not intents_user:
+#             combined_responses.append(fetch_google_summary(query))
+#         elif sentiment_response:
+#             combined_responses.append(sentiment_response)
+#         elif "datetime" in intents_user:
+#             current_datetime = datetime.datetime.now().strftime("%Y-%m-%d - %H:%M:%S")
+#             combined_responses.append(random.choice(responses["datetime"]).replace("{datetime}", current_datetime))
+#         elif "time" in intents_user:
+#             current_time = datetime.datetime.now().strftime("%H:%M:%S")
+#             combined_responses.append(random.choice(responses["time"]).replace("{time}", current_time))
+#         elif "date" in intents_user:
+#             current_time = datetime.datetime.now().strftime("%Y-%m-%d")
+#             combined_responses.append(random.choice(responses["date"]).replace("{date}", current_time))
+#         else:
+#             for intent in intents_user:
+#                 if intent in responses and responses[intent]:
+#                     response_template = random.choice(responses[intent]).replace("{name}", name)
+#                     combined_responses.append(response_template)
+
+#     return " ".join(combined_responses)
+
+# def is_image_request(query: str) -> bool:
+#     query = query.lower()
+
+#     action_words = {"create", "make", "made", "send", "sent"}
+#     quantity_words = {"a", "an", "one", "many", "more"}
+#     image_words = {"image", "images", "img", "photo", "photos", "picture", "pictures", "pics"}
+
+#     words = query.split()
+ 
+#     has_image_word = any(word in image_words for word in words) 
+#     has_action_word = any(word in action_words for word in words) 
+#     if has_image_word and not has_action_word:
+#         return True
+ 
+#     if has_image_word and has_action_word:
+#         return True
+
+#     return False
+
+# def is_image_request(query: str) -> bool:
+#     query = query.lower().strip()
+
+#     valid_combinations = {
+#         "image", "images", "img",
+#         "photo", "photos", "pht", 
+#         "picture", "pictures", "pics",
+#         "Image", "Images", "Img",
+#         "Photo", "Photos", "Pht",
+#         "PICTURE", "PICTURES", "PICS",
+#         "IMAGE", "IMAGES", "IMG",
+#         "PHOTO", "PHOTOS"
+#     }
+
+#     action_words = {"create", "send", "sent", "made", "make",
+#                     "Create", "Send", "Sent", "Made", "Make",
+#                     "CREATE", "SEND", "SENT", "MADE", "MAKE",
+#                     "a", "an", "one", "many", "Many", "MANY", "more", "More", "MORE"}
+
+#     words = query.split()
+ 
+#     contains_image_word = any(word in valid_combinations for word in words)
+ 
+#     contains_action = any(word in action_words for word in words)
+ 
+#     return contains_image_word or (contains_image_word and contains_action)

@@ -10,30 +10,21 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
-from pathlib import Path
-import sys , os
-from .info import *
+from pathlib import Path 
+from .info import *  
+import os 
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
+ 
 SECRET_KEY = 'django-insecure-i-%qsl3bz2wdj59(=f9=58ux=gv*tbg6134q_wa_-dw6epyd0y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 ALLOWED_HOSTS = ['*']
-
-# ALLOWED_HOSTS = ['*','https://fa3d-182-188-93-87.ngrok-free.app']
-
-
-# Application definition
+ 
 
 INSTALLED_APPS = [
+    'daphne',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,6 +32,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ChatBootAi',
+    'channels', 
     'storeAuthentic.apps.StoreauthenticConfig',
     'storeTask.apps.StoretaskConfig',
 ]
@@ -73,9 +65,17 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Task_Project.wsgi.application'
+# WSGI_APPLICATION = 'Task_Project.wsgi.application'
+ASGI_APPLICATION = 'Task_Project.asgi.application'
 
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',
+         
 
+    },
+}
+ 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
@@ -147,3 +147,40 @@ AUTH_USER_MODEL = 'storeAuthentic.UserProfile'
 DATA_UPLOAD_MAX_MEMORY_SIZE = 1024 * 1024 * 100   # most important . 100MB saved 
 
 MAP_API_SERVICE = '5b3ce3597851110001cf6248aa7d6d6c1bd647c8bacaf4b24eef837b'
+
+# ---------------------------------------------------------------------------------------------- > 
+ 
+BASE_URL = os.environ.get("BASE_URL", default="http://127.0.0.1:8000")
+
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8000",
+    "http://127.0.0.1:3000",
+]
+
+
+CORS_ALLOW_HEADERS = [
+    'content-type',
+    'x-csrftoken',
+    'authorization',
+]
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'DEBUG',
+    },
+}
+ 
+
+ 

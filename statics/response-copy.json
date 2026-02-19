@@ -1,0 +1,35 @@
+{
+    "name": [
+        "Oooh great to meet you {name}. How may I assist you {name}",
+        "Oh, I'll keep that in mind {name}"
+    ],
+    "AI": [
+        " Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.",
+        " AI is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind."
+    ],
+    "you": [
+        "I'm Chatbot Machine.",
+        "I'm only for Assisting you!",
+        "I'm not danger for you ! I'm only wide Programming Algorithm to assis you!"
+    ],
+    "help": [
+        "Sure, {name}, I'm here to help. Please let me know your query.",
+        "What would you like assistance with, {name}?",
+        "I'm happy to help, {name}! What do you need assistance with?",
+        "I'm ready to assist you with anything you need.",
+        "Just let me know how I can help! {name}"
+    ],
+    "date": [
+        "Today's date is {date}.",
+        "The current date is {date}."
+    ],
+    "time": [
+        "The current time is {time}.",
+        "It's {time} right now.",
+        "The current time is 14:47:36."
+    ],
+    "datetime": [
+        "The current date and time is {datetime}.",
+        "Right now, it is {datetime}."
+    ] 
+}
