@@ -1,20 +1,23 @@
->> chatboot page
-<img width="1440" height="835" alt="chatboot" src="https://github.com/user-attachments/assets/8a0118be-442b-42f3-8887-8b58636a075e" />
+chatboot Ai >> [scrap text from googgle then Analysis , and also  json file respone / intent to analysis ]
+<img width="1277" height="842" alt="chatboot" src="https://github.com/user-attachments/assets/f740f356-c752-40dd-9266-62e83c302706" />
 
->> map location page 
-<img width="899" height="839" alt="maplocation" src="https://github.com/user-attachments/assets/2ad4e5f2-6100-4fda-bacc-963ee929fc59" />
+map location
+<img width="779" height="839" alt="map location " src="https://github.com/user-attachments/assets/af0c1587-b167-4f6d-a926-fb4d48a82122" />
 
 >> chartGraph page
-<img width="1439" height="653" alt="chartGraph" src="https://github.com/user-attachments/assets/72363c64-4ec7-4aaa-884d-146cd63dfa5a" />
+<img width="896" height="844" alt="chartGraph" src="https://github.com/user-attachments/assets/b4b6f4f6-b484-487d-84fb-be65f2e3ae5a" /> 
 
 >> video page
-<img width="1436" height="857" alt="video" src="https://github.com/user-attachments/assets/2b22bb08-4341-4ffc-96a3-43633048a88a" />
+ <img width="1010" height="842" alt="video camera record" src="https://github.com/user-attachments/assets/4245001e-bef3-455b-9dd2-37944cf86cd7" /> 
 
 >> camera selfie page
-<img width="1439" height="866" alt="camera" src="https://github.com/user-attachments/assets/bd6dba70-c6c3-4fca-82fb-2bf5b039a0f4" />
+<img width="930" height="843" alt="camera" src="https://github.com/user-attachments/assets/d6217d48-623c-4871-a3a1-d592376b1550" /> 
 
->> audio page
-<img width="1440" height="540" alt="audio" src="https://github.com/user-attachments/assets/b1957157-e13a-465b-afb1-739d7902ab56" />
+>> audio page 
+<img width="971" height="840" alt="audio record" src="https://github.com/user-attachments/assets/3b1a00d1-06e7-42e8-96b5-d97807c84a90" /> 
 
 >> english alphabet page, [ all combination can generete (26 trillion combination can be geneerate 1024GB~= 1TB required) and search ]
-<img width="1415" height="686" alt="alphabet" src="https://github.com/user-attachments/assets/6f43ffe7-a1a2-4585-980b-83e7b6d424a6" /> 
+<img width="899" height="842" alt="alphabet" src="https://github.com/user-attachments/assets/6ea79165-6769-40ab-ab19-8020d7cbc362" />
+
+ >> Home Page
+<img width="982" height="779" alt="home" src="https://github.com/user-attachments/assets/4f332c7c-7bc8-43f0-9fb3-b1668421bc45" /> 
