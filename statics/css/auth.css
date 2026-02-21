@@ -1,0 +1,36 @@
+
+     body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+}
+html {
+    scroll-behavior: smooth;
+}
+.bg-light {
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.bg-dark {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.bg-dark .btn {
+    border-radius: 30px;
+    font-weight: 500;
+}
+.chat-container {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 15px;
+}
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}

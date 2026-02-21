@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {% load static %}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -8,8 +9,14 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
-
+    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  </head>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/darkly/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">   
+  
+    <link rel="stylesheet" href="{% static 'css/auth.js' %}" />
+  </head> 
+
   <body></body>
 </html>

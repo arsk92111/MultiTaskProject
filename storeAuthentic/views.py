@@ -1,26 +1,13 @@
-import base64
-from collections import ChainMap
-from fileinput import FileInput
-from django.http import HttpResponse, HttpResponseRedirect
-from django.urls import reverse
-from django.shortcuts import redirect, render, get_object_or_404
-from django.template import loader
-from django.contrib.sites.shortcuts import get_current_site
-from django.template.loader import render_to_string
-from django.contrib.auth.decorators import login_required 
-import datetime, uuid, re 
-from django.contrib import messages
-from django.core.mail import EmailMessage, send_mail
-from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
-from django.utils.encoding import force_bytes, force_str 
-from django.conf import settings 
-from Task_Project import settings
-from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.models import User 
-
-from storeAuthentic.models import UserProfile
-
+from django.contrib.auth import authenticate, login, logout 
 from django.core.files.base import ContentFile  
+from storeAuthentic.models import UserProfile
+from django.shortcuts import redirect, render 
+from django.contrib import messages
+from Task_Project import settings 
+import base64
+import uuid 
+ 
+
 def logIn(request):    
     if request.method == "POST":   
         username = request.POST.get('email')

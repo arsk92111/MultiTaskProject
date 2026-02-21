@@ -8,7 +8,8 @@
     ],
     "name": [
         "Oooh great to meet you {name}. How may I assist you {name}",
-        "Oh, I'll keep that in mind {name}"
+        "Oh, I'll keep that in mind {name}",
+        "Oooh great to meet you Arshad Ali. How may I assist you Arshad Ali"
     ],
     "AI": [
         " Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.",
@@ -17,7 +18,8 @@
     "you": [
         "I'm Chatbot Machine.",
         "I'm only for Assisting you!",
-        "I'm not danger for you ! I'm only wide Programming Algorithm to assis you!"
+        "I'm not danger for you ! I'm only wide Programming Algorithm to assis you!",
+        "No relevant search results found."
     ],
     "help": [
         "Sure, {name}, I'm here to help. Please let me know your query.",
@@ -766,7 +768,7 @@
         "sometimes with improvisation",
         "theatrics or embellishment. Every culture has its own narratives",
         "which are shared as a means of entertainment",
-        "education", 
+        "education",
         "[2] predates writing. The earliest forms of storytelling were usually oral",
         "combined with gestures and expressions.[citation needed] Storytelling often has a prominent educational and performative role in religious rituals (for example",
         "the Passover Seder[3])",
@@ -1067,9 +1069,12 @@
         "I'll keep that in mind Arshad Ali"
     ],
     "what is my name": [
-        "Oooh great to meet you Arshad Ali. How may I assist you Arshad Ali"
+        "Oooh great to meet you Arshad Ali. How may I assist you Arshad Ali",
+        "Oh",
+        "I'll keep that in mind Arshad Ali"
     ],
     "what is time right now": [
+        "I noticed some negation in your words. Feel free to clarify.",
         "I noticed some negation in your words. Feel free to clarify."
     ],
     "what is time?": [
@@ -1109,5 +1114,11 @@
         "2021 Explore Articles Sitemap Gifts Member Wins About Diversity",
         "Equity",
         "and Inclusion Careers Newsroom Security Privacy Terms Social Impact MasterClass at Work Support Social Twitter Instagram Facebook YouTube LinkedIn Download Download on the App Store Get it on Google Play Available at amazon app store Available on Roku MasterClass homepage \u00a9 2026 MasterClass Secured with SSL https://www.masterclass.com/articles/the-essential-elements-of-a-good-story : https://www.prodigygame.com/main-en/blog/story-elements https://www.googleadservices.com/pagead/conversion/952839809/?label=2e1HCMP075gbEIHdrMYD&guid=ON&script=0"
+    ],
+    "Who are you?": [
+        "No relevant search results found."
+    ],
+    "what is time": [
+        "It's 12:13:03 right now."
     ]
 }

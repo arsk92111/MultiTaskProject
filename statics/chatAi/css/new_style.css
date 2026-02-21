@@ -1,0 +1,183 @@
+ 
+  /* Cards and containers */
+  .container, .page, .chat, .screen, .mx-5, .bg-light {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Improve form controls */
+  .form-control, .input-msg {
+    border: 2px solid #e0e0e0;
+    border-radius: 25px;
+    padding: 12px 20px;
+    transition: all 0.3s;
+  }
+  .form-control:focus, .input-msg:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+  }
+
+  /* Buttons */
+  .btn {
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  }
+
+  /* Chat messages */
+  .message {
+    border-radius: 20px !important;
+    padding: 12px 18px !important;
+    margin-bottom: 10px !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .message.sent {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: rgb(0, 0, 0);
+    align-self: flex-end;
+  }
+  .message.received {
+    background: white;
+    border: 1px solid #e0e0e0;
+  }
+
+  /* Typing indicator */
+  .typing-indicator span {
+    background-color: #667eea;
+  }
+
+  /* Code blocks */
+  code, pre {
+    background: #2d2d2d !important;
+    color: #0c0c02 !important;
+    border-radius: 10px;
+    padding: 15px !important;
+  }
+
+  /* Avatar */
+  .avatar img {
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+
+  /* Navbar (headerTask.html ke links) */
+  .mx-5.bg-dark {
+    background: rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+    padding: 10px 20px !important;
+  }
+  .mx-5.bg-dark a {
+    border-radius: 30px;
+    margin: 0 5px;
+    transition: all 0.3s;
+  }
+  .mx-5.bg-dark a:hover {
+    transform: scale(1.05);
+  }
+
+  /* Map container */
+  #map {
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  }
+
+
+  
+  /* Galaxy background with stars and connecting dots */
+  body {
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  /* Stars effect */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, #fffa, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 80px 120px, #ffd, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 160px 50px, #faf, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 250px 180px, #aff, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 350px 90px, #ffa, rgba(0,0,0,0)),
+      radial-gradient(3px 3px at 450px 200px, #faa, rgba(0,0,0,0)),
+      radial-gradient(3px 3px at 550px 300px, #afa, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 650px 400px, #aaf, rgba(0,0,0,0)),
+      radial-gradient(3px 3px at 750px 500px, #fda, rgba(0,0,0,0)),
+      radial-gradient(4px 4px at 850px 600px, #dff, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 950px 700px, #fcf, rgba(0,0,0,0)),
+      radial-gradient(3px 3px at 1050px 800px, #cff, rgba(0,0,0,0));
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Connecting dots pattern (universal connector) */
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Ensure content appears above background */
+  body > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Adjust existing containers to be semi-transparent */
+  .container, .page, .chat, .screen, .mx-5, .bg-light {
+    background: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(10px) brightness(1.2);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 8px 32px rgba(255,255,255,0.1);
+  }
+
+  /* Text colors for dark background */
+  body, p, h1, h2, h3, h4, h5, h6, label, span {
+    color: #ffffff !important;
+  }
+
+  /* Form inputs on dark background */
+  .form-control, .input-msg {
+    background: rgba(255,255,255,0.1) !important;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+    color: rgb(17, 7, 7) !important;
+  }
+  .form-control::placeholder, .input-msg::placeholder {
+    color: rgba(255,255,255,0.6) !important;
+  }
