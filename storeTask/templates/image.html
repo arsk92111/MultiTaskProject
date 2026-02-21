@@ -5,7 +5,7 @@
 </head>
 
 <body>
-  <div class="mx-5  bg-light">
+  <div class="mx-5  container"  style="background-color: gray !important;">
     <center>
       <h1>Image</h1>
     </center>
@@ -19,7 +19,7 @@
     </ul>
     {% endif %}
   </div>
-  <div class="mx-5  bg-light">
+  <div class="mx-5 container"  style="background-color: gray !important;">
     <h1>Webcam Capture</h1>
     <video id="videoElement" autoplay></video>
     <button id="startButton">Start Webcam</button>
@@ -28,7 +28,7 @@
     <img id="photoElement" style="display: none" hidden />
 
   </div>
-  <div class="mx-5 ">
+  <div class="mx-5 container"  style="background-color: gray !important;">
     <form action="{% url 'Imge' %}" method="post" enctype="multimedia/part">
         {% csrf_token %}
     <textarea type="text" id="data_img" name="data_img" class="form-control"></textarea>

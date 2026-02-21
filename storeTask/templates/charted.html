@@ -8,12 +8,12 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <div class="mx-5  bg-light">
+  <div class="mx-5 container"  style="background-color: gray !important;">
     <center>
       <h1>Chart & Graphs</h1>
     </center>
     
-    <div class="container">
+    <div class=" container"  style="background-color: gray !important;">
       <!-- Form to input start and end values -->
       <form action="{% url 'charted' %}" method="post" enctype="multimedia/part">
         {% csrf_token %}
@@ -29,7 +29,7 @@
       </form>
     </div>
 
-    <div class="container">
+    <div class=" container"  style="background-color: gray !important;">
       <!-- Display a message if any number did not converge to 1, 2, or 4 -->
       {% if no_convergence %}
         <div class="alert alert-warning">

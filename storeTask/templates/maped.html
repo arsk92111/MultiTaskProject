@@ -20,7 +20,7 @@
 
 
 <body>
-  <div class="mx-5  bg-light">
+  <div class="mx-5 container"  style="background-color: gray !important;">
     <center>
       <h1>Map</h1>
     </center>
@@ -35,13 +35,13 @@
     {% endif %}
   </div>
     </br></br>
-    <div class="mx-5  mx-3 my-3">
+    <div class="mx-5  mx-3 my-3 container"  style="background-color: gray !important;">
         <h3>Maped Data</h3>
     </div>
     
      
 </br>
-<div class="mx-5 ">
+<div class="mx-5  container"  style="background-color: gray !important;">
     <form action="{% url 'map' %}" method="post" enctype="multimedia/part">
         {% csrf_token %}
     <p>

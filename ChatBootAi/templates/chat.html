@@ -200,15 +200,15 @@
 
                     {% for msg in msg_show %}
                         <div class="message sent">
-                            <div>{{ msg.user_input }}</div>
+                            <div style="color: white !important;">{{ msg.user_input }}</div>
                             <span class="metadata">
-                                <span class="time">{{ msg.created_at }}</span>
+                                <span style="color: rgba(203, 201, 201, 0.768) !important;" class="time">{{ msg.created_at }}</span>
                             </span>
                         </div>
                         <div class="message received">
                             <div>{{ msg.bot_response|safe }}</div>
                             <span class="metadata">
-                                <span class="time">{{ msg.created_at }}</span>
+                                <span style="color: #999 !important;" class="time">{{ msg.created_at }}</span>
                             </span>
                         </div>
                     {% endfor %}

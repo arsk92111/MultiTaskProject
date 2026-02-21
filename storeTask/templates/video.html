@@ -5,7 +5,7 @@
 </head>
 
 <body>
-  <div class="mx-5  bg-light">
+  <div class="mx-5  container"  style="background-color: gray !important;">
      
     <center>
       <h1>Video</h1>
@@ -18,7 +18,7 @@
     </ul> 
     {% endif %}
   </div>
-  <div class="mx-5  bg-light">    
+  <div class="mx-5  container"  style="background-color: gray !important;">    
      <p><video id="video" autoplay width="320" /><p>
 <p><button onclick="startFunction()">Start recording</button></p>
 <p><button onclick="download()">stop video</button></p>
@@ -26,7 +26,7 @@
   </div>
 
 
-  <div class="mx-5 ">
+  <div class="mx-5  container"  style="background-color: gray !important;">
     <form action="{% url 'Vdeo' %}" method="post" enctype="multimedia/part">
         {% csrf_token %}
     <textarea type="text" id="data_vid" name="data_vid" class="form-control"></textarea>
@@ -36,7 +36,7 @@
   </div>
 
 
-  <div class="mx-5 ">
+  <div class="mx-5  container"  style="background-color: gray !important;">
      {%  for vid in vid_show %}
       <video  controls class="video/mp4"  width="25%" hieght="25%" >
         <source src="{{BASE_DIR}}/media/{{vid.vid_file}}" width="25%" hieght="25%" class="video/mp4" type="video/mp4">	 

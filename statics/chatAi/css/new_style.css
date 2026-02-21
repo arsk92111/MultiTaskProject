@@ -168,8 +168,20 @@
   }
 
   /* Text colors for dark background */
-  body, p, h1, h2, h3, h4, h5, h6, label, span {
+  body {
     color: #ffffff !important;
+  }
+  p {
+    color: white !important;
+  }
+  label {
+    color: white !important;
+  }
+  span {
+    color: white !important;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: white !important;
   }
 
   /* Form inputs on dark background */
@@ -181,3 +193,55 @@
   .form-control::placeholder, .input-msg::placeholder {
     color: rgba(255,255,255,0.6) !important;
   }
+
+
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.404);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 50px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    transition: 0.4s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.188);
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.141);
+}
+
+.profile-info h4 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.profile-info .email {
+    font-size: 14px;
+    color: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+.bg-gradient {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-size: 12px;
+    color: white;
+}
